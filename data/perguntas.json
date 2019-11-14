@@ -1,0 +1,354 @@
+[
+  {
+    "id": "001C",
+    "question_text": "From 0 to 100, what is the chance of rain in Recife(pink) below 100mm?",
+    "op": [
+    ],
+    "highlights": [
+      "Recife"
+    ],
+    "answer": 47,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "002C",
+    "question_text": "From 0 to 100, what is the chance of rain in Jaboatão dos Guararapes(pink) above 100mm?",
+    "op": [
+    ],
+    "highlights": [
+      "Jaboatão dos Guararapes"
+    ],
+    "answer": 42,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "003C",
+    "question_text": "From 0 to 100, what is the chance of rain in São Lourenço da Mata(pink) between 50 and 150mm?",
+    "op": [
+    ],
+    "highlights": [
+      "São Lourenço da Mata"
+    ],
+    "answer": 33,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "004C",
+    "question_text": "Between Ipojuca (pink) and Cabo de Santo Agostinho(blue), which of the two cities is likely to rain less than 100mm?",
+    "op": [
+    ],
+    "highlights": [
+      "Ipojuca",
+      "Cabo de Santo Agostinho"
+    ],
+    "answer": "Ipojuca",
+    "distance": "Short",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "005C",
+    "question_text": "From 0 to 100, what is the chance of rain less in Ipojuca(pink) than in Cabo de Santo Agostinho(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      "Ipojuca",
+      "Cabo de Santo Agostinho"
+    ],
+    "answer": "66",
+    "distance": "Short",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "006C",
+    "question_text": "From 0 to 100, what is the chance of rain less in Recife(pink) than in Santa Cruz(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      "Recife",
+      "Santa Cruz"
+    ],
+    "answer": "15",
+    "distance": "Long",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "007C",
+    "question_text": "From 0 to 100, what is the chance of rain less in Jataúba(pink) than in Petrolândia(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      "Jataúba",
+      "Petrolândia"
+    ],
+    "answer": "64",
+    "distance": {},
+    "variance": "Low",
+    "size": {}
+  },
+  {
+    "id": "008C",
+    "question_text": "From 0 to 100, what is the chance of rain less in Tacaratú(pink) than in Araripina(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      "Tacaratu",
+      "Araripina"
+    ],
+    "answer": "48",
+    "distance": {},
+    "variance": "High",
+    "size": {}
+  },
+  {
+    "id": "009C",
+    "question_text": "From 0 to 100, what is the chance of rain less in Saloá(pink) than in Pigeons(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      "Saloá",
+      "Pombos"
+    ],
+    "answer": "56",
+    "distance": {},
+    "variance": {},
+    "size": "Small"
+  },
+  {
+    "id": "010C",
+    "question_text": "From 0 to 100, what is the chance of rain less in Sertânia(pink) than in Parnamirim(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      "Sertânia",
+      "Parnamirim"
+    ],
+    "answer": "53",
+    "distance": {},
+    "variance": {},
+    "size": "Large"
+  },
+  {
+    "id": "011C",
+    "question_text": "Type the name of the city that is most likely to rain below 100mm?",
+    "op": [
+    ],
+    "highlights": [
+      ""
+    ],
+    "answer": "Jatobá",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "012C",
+    "question_text": "Type the name of the city that is least likely to rain below 100mm?",
+    "op": [
+    ],
+    "highlights": [
+      ""
+    ],
+    "answer": "Amaraji",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "013C",
+    "question_text": "What is the average rainfall in the city of Caruaru(pink)?",
+    "op": [
+    ],
+    "highlights": [
+      "Caruaru"
+    ],
+    "answer": 50,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+    {
+    "id": "014T",
+    "question_text": "From 0 to 100, what is the chance that the number of taxis in the West Chelsea/Hudson Yards(pink) area will be less than 18000?",
+    "op": [
+    ],
+    "highlights": [
+      246
+    ],
+    "answer": 75,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "015T",
+    "question_text": "From 0 to 100, what is the chance that the number of taxis in the West Chelsea/Hudson Yards(pink) area is over 35000?",
+    "op": [
+    ],
+    "highlights": [
+      246
+    ],
+    "answer": 83,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "016T",
+    "question_text": "From 0 to 100, what is the chance that the number of taxis in the Times Sq/Theater District(pink) area is between 18000 and 35000?",
+    "op": [
+    ],
+    "highlights": [
+      230
+    ],
+    "answer": 33,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+    {
+    "id": "017T",
+    "question_text": "Between Midtown South(pink) and Murray Hill(blue), which of the two areas is more likely to have fewer than 27000 cab rides?",
+    "op": [
+    ],
+    "highlights": [
+      164,
+      170
+    ],
+    "answer": "Midtown South",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "018T",
+    "question_text": "From 0 to 100, what is the chance that the number of cab rides in Midtown South(pink) will be less than Murray Hill(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      164,
+      170
+    ],
+    "answer": "0",
+    "distance": "Short",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "019T",
+    "question_text": "From 0 to 100, what is the chance that the number of cab rides in West Village(pink) will be less than Upper East Side South(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      249,
+      237
+    ],
+    "answer": "0",
+    "distance": "Long",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "020T",
+    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Lenox Hill West(pink) will be less than Gramercy(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      141,
+      107
+    ],
+    "answer": "84",
+    "distance": {},
+    "variance": "Low",
+    "size": {}
+  },
+  {
+    "id": "021T",
+    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in West Village(pink) will be less than Murray Hill(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      249,
+      170
+    ],
+    "answer": "92",
+    "distance": {},
+    "variance": "High",
+    "size": {}
+  },
+  {
+    "id": "022T",
+    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Central Park(pink) will be lower than in Greenwich Village North(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      43,
+      113
+    ],
+    "answer": "75",
+    "distance": {},
+    "variance": {},
+    "size": "Small"
+  },
+  {
+    "id": "023T",
+    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Clinton East(pink) will be lower than in East Chelsea(blue)?",
+    "op": [
+    ],
+    "highlights": [
+      48,
+      68
+    ],
+    "answer": "0",
+    "distance": {},
+    "variance": {},
+    "size": "Large"
+  },
+  {
+    "id": "024T",
+    "question_text": "Enter the name of the area most likely to have a taxi race number greater than 34000?",
+    "op": [
+    ],
+    "highlights": [
+      ""
+    ],
+    "answer": "Penn Station/Madison Sq West",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "025T",
+    "question_text": "Enter the name of the area that is least likely to have a taxi race number greater than 14000?",
+    "op": [
+    ],
+    "highlights": [
+      ""
+    ],
+    "answer": "Stuy Town/Peter Cooper Village",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "026T",
+    "question_text": "Estimate what is the average number of taxi rides in the Gramercy(pink) area?",
+    "op": [
+    ],
+    "highlights": [
+      107
+    ],
+    "answer": 25000,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  }
+]
