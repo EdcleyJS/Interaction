@@ -6,10 +6,12 @@ var mapVis02 = L.map('vis02').setView([-8.305448,-37.822426], 8);
 var mapVistaxi = L.map('vistaxi').setView([40.752866,-73.986023], 13);
 var gradesR=[0,0.12,0.24,0.36,0.48,0.60,0.72,0.84,1];
 var databasetaxi,datasettaxi;
-//map.doubleClickZoom.disable();
 mapRange.doubleClickZoom.disable();
-//mapVis01.doubleClickZoom.disable();
+mapRange.scrollWheelZoom.disable();
 mapVis02.doubleClickZoom.disable();
+mapVis02.scrollWheelZoom.disable();
+mapVistaxi.scrollWheelZoom.disable();
+mapVistaxi.doubleClickZoom.disable();
 // INICIA A BASE DE DADOS E O DATASET DE POLIGONOS.
 d3.json("./data/dados.json",function(error,data){
   database=data;
@@ -192,11 +194,15 @@ function Vis01TutorialFunction(dataset,interOn){
 }
 */
 //-- MAPA CHOROPLETH DE PROBABILIDADE EM UM INTERVALO DA ETAPA DE PERGUNTAS DO USUÁRIO. --
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-  maxZoom: 18,
-  id: 'mapbox.streets',
-  accessToken: 'pk.eyJ1IjoiZWRjbGV5OTQ1MiIsImEiOiJjamdvMGdmZ2owaTdiMndwYTJyM2tteTl2In0.2q25nBNRxzFxeaYahFGQ6g'
+//L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+//  maxZoom: 18,
+//  id: 'mapbox.streets',
+//  accessToken: 'pk.eyJ1IjoiZWRjbGV5OTQ1MiIsImEiOiJjamdvMGdmZ2owaTdiMndwYTJyM2tteTl2In0.2q25nBNRxzFxeaYahFGQ6g'
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 18
 }).addTo(mapRange);
 
 //-- DIV INFO DO MAPA CONTROLADO -- 
@@ -281,11 +287,10 @@ function inicioRange(dataset){
 }
 
 //----------- MAPA CHOROPLETH DE PROBABILIDADE EM UM INTERVALO DA ETAPA DE TUTORIAL DO USUÁRIO. --
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-  maxZoom: 18,
-  id: 'mapbox.streets',
-  accessToken: 'pk.eyJ1IjoiZWRjbGV5OTQ1MiIsImEiOiJjamdvMGdmZ2owaTdiMndwYTJyM2tteTl2In0.2q25nBNRxzFxeaYahFGQ6g'
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 18
 }).addTo(mapVis02);
 //-- DIV INFO DO MAPA CONTROLADO -- 
 var infoVis02=L.control();
@@ -380,11 +385,10 @@ function Vis02TutorialFunction(dataset,interOn){
   infoVis02.addTo(mapVis02);
 }
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-  maxZoom: 18,
-  id: 'mapbox.streets',
-  accessToken: 'pk.eyJ1IjoiZWRjbGV5OTQ1MiIsImEiOiJjamdvMGdmZ2owaTdiMndwYTJyM2tteTl2In0.2q25nBNRxzFxeaYahFGQ6g'
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 18
 }).addTo(mapVistaxi);
 
 //-- DIV INFO DO MAPA CONTROLADO -- 

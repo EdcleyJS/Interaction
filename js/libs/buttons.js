@@ -190,7 +190,7 @@ $(document).ready(function () {
     });
     // FUNÇÃO PARA GARANTIR QUE O VALOR ESCOLHIDO NO SLIDER SEJA COLOCADO NO INPUT CORRETO DO FORM.
     $(".ioRangerSlider").ionRangeSlider({
-		min: 0,
+		min: 1,
         max: 5,
         skin: "big",
         grid: true,
@@ -216,6 +216,7 @@ $(document).ready(function () {
         max: 842,
         from: 80,
         to: 400,
+        step: 10,
         drag_interval: true,
         skin: "big",
         grid: true,
@@ -229,10 +230,11 @@ $(document).ready(function () {
 	});
 	$("#sliderrangetaxi").ionRangeSlider({
 		type: "double",
-		min: 43,
-        max: 54469,
+		min: 0,
+        max: 54470,
         from: 22000,
         to: 36000,
+        step: 100,
         drag_interval: true,
         skin: "big",
         grid: true,
@@ -263,6 +265,7 @@ $(document).ready(function () {
         max: 842,
         from: 80,
         to: 400,
+        step: 10,
         drag_interval: true,
         skin: "big",
         grid: true,
