@@ -1,4 +1,4 @@
-var filterbymouth,filterbytri,alpha=0,left=80,right=400,database,interOn,mesSelecionado,anoSelecionado,diaSelecionado,trimestreSelecionado,opcoes=[],GeoLayer,LayerRange,layerTuto1,layerTuto2,layerTuto3,layerTuto4,LayerTaxi,dataset,max,featurename,selecionados=[],medias=[],hops=true;
+var filterbymouth,filterbytri,alpha=0,left=80,right=400,leftTaxi=22000,rightTaxi=36000,database,interOn,mesSelecionado,anoSelecionado,diaSelecionado,trimestreSelecionado,opcoes=[],GeoLayer,LayerRange,layerTuto1,layerTuto2,layerTuto3,layerTuto4,LayerTaxi,dataset,max,featurename,selecionados=[],medias=[],hops=true;
 //var map = L.map('vis6').setView([-8.305448,-37.822426], 8);
 var mapRange = L.map('vis2').setView([-8.305448,-37.822426], 8);
 //var mapVis01 = L.map('vis01').setView([-8.305448,-37.822426], 8);
@@ -420,7 +420,7 @@ function inicioTaxi(dataset){
   }
   LayerTaxi =L.geoJson(datasettaxi,
     {style: function(feature){
-        var probArea= new distribuicaoIntervalo(distribuicaoNYC(feature.properties.OBJECTID),left,right);
+        var probArea= new distribuicaoIntervalo(distribuicaoNYC(feature.properties.OBJECTID),leftTaxi,rightTaxi);
         var prob= probArea.cdfintervalo().toFixed(2);
         if(opcoes.includes(feature.properties.OBJECTID)){
           if(opcoes[0]==feature.properties.OBJECTID){
@@ -453,7 +453,7 @@ function inicioTaxi(dataset){
         }
       }
     ,onEachFeature: function (feature, layer) {
-        var probArea= new distribuicaoIntervalo(distribuicaoNYC(feature.properties.OBJECTID),left,right);
+        var probArea= new distribuicaoIntervalo(distribuicaoNYC(feature.properties.OBJECTID),leftTaxi,rightTaxi);
         var prob= probArea.cdfintervalo().toFixed(2);
         layer.bindPopup(""+feature.properties.zone+": "+Math.floor(prob*100)+"%");
         layer.on('mouseover', function (e) {

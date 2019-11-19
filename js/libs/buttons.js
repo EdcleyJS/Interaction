@@ -240,8 +240,8 @@ $(document).ready(function () {
         grid: true,
         onChange: function (data) {
         	interOn=true;
-            left=data.from;
-            right=data.to;
+            leftTaxi=data.from;
+            rightTaxi=data.to;
             inicioTaxi(dataset);
             interOn=false;
         }
@@ -449,8 +449,6 @@ $(document).ready(function () {
 			// PREPARA E INICIA A ETAPA DE PERGUNTAS PÓS TUTORIAL
 			}else if($(this)[0].id=='btuto10'){
 				alpha=0;
-				left=80;
-				right=400;
 				//if(pontos!= undefined){
 				//	pontos.clearLayers();
 				//}
@@ -481,11 +479,15 @@ $(document).ready(function () {
 				    	opcoes.push(d);
 				    });
 					if(base=='C'){
+						left=80;
+						right=400;
 						$('#chuvaview').show();
 						$('#taxiview').hide();
 				    	mapRange.invalidateSize();
 						inicioRange(dataset);
 					}else if(base=='T'){
+						leftTaxi=22000;
+						rightTaxi=36000;
 						$('#taxiview').show();
 						$('#chuvaview').hide();
 						mapVistaxi.invalidateSize();
