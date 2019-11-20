@@ -172,7 +172,7 @@ $(document).ready(function () {
 	//stepper4 = new Stepper($('.bs-stepper')[4]);
 	//OCULTA A TELA INICIAL E EXIBE O TUTORIAL
 	$('#iniciar').click(function(){
-		if($('input[name ="inlineRadioOptions"]:checked').val()==undefined || $('input[name ="inlineRadioOptions"]:checked').val()=='Não'){
+		if($('input[name ="inlineRadioOptions"]:checked').val()==undefined || $('input[name ="inlineRadioOptions"]:checked').val()=='No'){
 			$('.alert').addClass("show");//alert('Você Precisa aceitar os termos para começar.');
 		}else{
 			$('.alert').removeClass("show");
@@ -305,7 +305,7 @@ $(document).ready(function () {
 	});
 	// PARA A ETAPA DE PERGUNTAS CORRIGE O PROBLEMA DO TAMANHO DO MAPA POR CONTA DAS ANIMAÇÕES E INICIA OS MAPAS QUANDO UMA TAB MUDA.
     $("a[href='#pills-profile']").on('shown.bs.tab', function(e) {
-	    var id= $('#2Form > div.active > div > div > div > div> input')[0].id;
+	    var id= $('#2Form > div.active > div > div > div > div>').siblings()[0].id;
 	    var base=id.substring(3,4);
 		id=id.substring(0, 4);
 		var p=findP(novodataset,id);
@@ -365,10 +365,13 @@ $(document).ready(function () {
 	// VALIDA AS RESPOSTAS DOS FORMS, DESTACA AS ÁREAS PERGUNTADAS E SETA OS VALORES DE TEMPO E CLICK PARA CADA PERGUNTA.
 	$(".btn-next-form").click(function() {
 		if($(this).hasClass('tutorial')==false){
-			var ent= $(this).parent().find('.form-group > div > div> div >input')[0].name;
+			var ent= $(this).parent().find('.form-group > div > div> div >').siblings()[0].name;
+			var entid= $(this).parent().find('.form-group > div > div> div >').siblings()[0].id;
 			if($('input[name='+ent+']:checked').val()==undefined && $('input[name='+ent+']').hasClass('custom-control-input')==true){
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else if($('input[name='+ent+']').val()==""&& $('input[name='+ent+']').hasClass('custom-control-input')==false){
+				$(this).parent().parent()[0].classList.add('was-validated');
+			}else if($('#'+entid).val()==undefined){
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else{
 			   	var formName=$(this).parent().parent()[0].id;
@@ -385,9 +388,7 @@ $(document).ready(function () {
 			    	inicio(dataset);
 			   	}else */if(formName=='2Form'){
 			   		stepper2.next();
-
-					
-			   		var id= $(this).parent().next().find('div >div > div> input')[0].id;
+			   		var id= $(this).parent().next().find('div >div > div>').siblings()[0].id;
 			   		var base=id.substring(3,4);
 					id=id.substring(0, 4);
 					var p=findP(novodataset,id);
@@ -431,10 +432,10 @@ $(document).ready(function () {
 				if($(this).parent().parent().hasClass('was-validated')){
 					$(this).parent().parent()[0].classList.remove("was-validated");
 				}
-				$(this).parent().find('.form-group > div > input')[1].value = clicks;
+				$(this).parent().find('.form-group > div >').siblings()[1].value = clicks;
 				d2 = new Date();
 				diff = Math.abs(d1-d2);
-				$(this).parent().find('.form-group > div > input')[2].value = (Math.round(diff/60));
+				$(this).parent().find('.form-group > div >').siblings()[2].value = (Math.round(diff/60));
 				clicks=-1;
 				d1 = new Date();		
 			}
@@ -469,7 +470,7 @@ $(document).ready(function () {
 				}else */if($('#2Form').is(':visible')){
 					mapRange.invalidateSize();
 					mapVistaxi.invalidateSize();
-					var id= $('#2Form > div.active > div > div > div > div> input')[0].id;
+					var id= $('#2Form > div.active > div > div > div > div>').siblings()[0].id;
 				   	var base=id.substring(3,4);
 					id=id.substring(0, 4);
 				    var p=findP(novodataset,id);
@@ -531,7 +532,7 @@ $(document).ready(function () {
 		/*if($('input[name='+ent+']:checked').val()==undefined){
 			$(this).parent().parent()[0].classList.add('was-validated');
 		}*/
-		var ent= $(this).parent().find('.form-group > div > div> div >input')[0].name;
+		var ent= $(this).parent().find('.form-group > div > div> div >').siblings()[0].name;
 		if($('input[name='+ent+']:checked').val()==undefined && $('input[name='+ent+']').hasClass('custom-control-input')==true){
 			$(this).parent().parent()[0].classList.add('was-validated');
 		}else if($('input[name='+ent+']').val()==""&& $('input[name='+ent+']').hasClass('custom-control-input')==false){
@@ -539,8 +540,8 @@ $(document).ready(function () {
 		}else{
 			d2 = new Date();
 			diff = Math.abs(d1-d2);
-			var ent= $(this).parent().find('.form-group > div > input')[1].value = clicks;
-			var ent= $(this).parent().find('.form-group > div > input')[2].value = (Math.round(diff/60));
+			var ent= $(this).parent().find('.form-group > div > ').siblings()[1].value = clicks;
+			var ent= $(this).parent().find('.form-group > div > ').siblings()[2].value = (Math.round(diff/60));
 			$('#pills-tab > li> a.active').parent().next()[0].classList.remove("disabled");
 			$('#pills-tab > li> a.active').parent().next().find('a').click();
 			$('#pills-tab > li> a.active').parent().prev()[0].classList.add("disabled");
@@ -559,6 +560,8 @@ $(document).ready(function () {
 			    url: $(this).attr('action'),
 			    data : $(this).serialize(),
 			    success: function(result, status, request){
+			    	sucesso++;
+			    	refresh();
 			        console.log(nameform.id+" Estado atual ---\n" + status + "\nResultado: " + JSON.stringify(result));
 			        //end=true;
 			    },

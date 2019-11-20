@@ -226,7 +226,7 @@ legendRange.onAdd = function (map) {
   return div;
 };
 legendRange.addTo(mapRange);
-
+var cidades=[];
 //-- FUNÇÃO QUE DESENHA E CONTROLA OS PONTOS NO MAPA --
 function inicioRange(dataset){
   if(LayerRange!= null){

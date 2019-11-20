@@ -1,3 +1,9 @@
+var sucesso=0;
+function refresh(){
+  if(sucesso==2){
+      window.location.reload(true);
+  }
+}
 var maior=0,menor=+Infinity;
 function distribuicaoNYC(id){
   var distdataMes=[];
@@ -693,7 +699,20 @@ function geraperguntas(perguntas,index,vis){
   label.setAttribute('for',"pergunta1");
   label.setAttribute('id',"pergunta1");
   label.innerText= pergunta.question_text//[0];//"Pergunta 1 ?";
-  if (pergunta.id!='027') {
+
+  var select = document.createElement("select");
+  select.setAttribute('id',""+pergunta.id+vis);
+  select.setAttribute('name',""+pergunta.id+vis);
+  select.setAttribute('class',"form-control");
+  select.required=true;
+  var opt= document.createElement("option");
+  opt.value='';
+  opt.disabled=true;
+  opt.selected=true;
+  opt.innerHTML = 'Pick one';
+  select.appendChild(opt);
+  var nQ=pergunta.id;
+  if (nQ!='004C'&&nQ!='011C'&&nQ!='012C'&&nQ!='017T'&&nQ!='024T'&&nQ!='025T') {
       var div1 = document.createElement("div");
       div1.setAttribute('class','col-sm-4 col-md-4 col-lg-4 col-xl-4');
 
@@ -761,9 +780,9 @@ function geraperguntas(perguntas,index,vis){
       input8.setAttribute('class','form-control');
       input8.setAttribute('value','');
       if(pergunta.id=="004C"||pergunta.id=="011C"||pergunta.id=="012C"||pergunta.id=="017T"||pergunta.id=="024T"||pergunta.id=="025T"){
-        input8.setAttribute('placeholder','Ex: Caruaru');
+        input8.setAttribute('placeholder','E.g. Caruaru');
       }else{
-        input8.setAttribute('placeholder','Ex: 50');
+        input8.setAttribute('placeholder','E.g. 50');
       }
       input8.required=true;
         var input4= document.createElement("div");
@@ -781,7 +800,7 @@ function geraperguntas(perguntas,index,vis){
   }else{
     for (var i = 0; i < pergunta.op.length; i++) {
       var div1 = document.createElement("div");
-      div1.setAttribute('class',"custom-control custom-radio custom-control-inline ");
+      div1.setAttribute('class',"form-group col-md-4");
       var input1= document.createElement("input");
       input1.setAttribute('type','hidden');
       input1.setAttribute('id','CLC'+pergunta.id+vis);
@@ -838,24 +857,10 @@ function geraperguntas(perguntas,index,vis){
       input3.setAttribute('name','CNFC'+pergunta.id+vis);
       input3.setAttribute('value','');
       input3.required=true;
-
-      var radio1 = document.createElement("input"); //input element, text
-      if(i==0){
-        radio1.required = true;
-      }
-      radio1.setAttribute('type',"radio");
-      radio1.setAttribute('class',"custom-control-input form-check-input form-control");
-      radio1.setAttribute('name',"pergunta"+pergunta.id+vis);
-      radio1.setAttribute('id',""+pergunta.id+pergunta.op[i]+vis);
-      radio1.setAttribute('value',pergunta.op[i]);
-      var label1 = document.createElement("label");
-      label1.setAttribute('class',"custom-control-label form-check-label");
-      label1.setAttribute('for',""+pergunta.id+pergunta.op[i]+vis);
-      label1.setAttribute('style',"font-weight:bold;");
-      label1.innerText=pergunta.op[i];
-
-      div1.appendChild(radio1);
-      div1.appendChild(label1);
+      var option= document.createElement("option");
+      option.value = pergunta.op[i];
+      option.innerHTML = pergunta.op[i];
+      select.appendChild(option);
       if(i==pergunta.op.length-1){
         var input4= document.createElement("div");
         var input7= document.createElement("br");
@@ -864,13 +869,15 @@ function geraperguntas(perguntas,index,vis){
         input6.innerText='You must pick one.';
         input4.appendChild(input7);
         input4.appendChild(input6);
+        div1.appendChild(select);
         div1.appendChild(input4);
+        d2.appendChild(label);
+        d1.appendChild(div1);
+        d2.appendChild(d1);
       }
-      d2.appendChild(label);
-      d1.appendChild(div1);
-      d2.appendChild(d1);
     }
   }
+
   d2.appendChild(label2);
   d2.appendChild(input3);
   var input5= document.createElement("div");

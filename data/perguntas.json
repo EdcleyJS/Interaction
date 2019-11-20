@@ -7,7 +7,7 @@
     "highlights": [
       "Recife"
     ],
-    "answer": 47,
+    "answer": "47",
     "distance": {},
     "variance": {},
     "size": {}
@@ -20,7 +20,7 @@
     "highlights": [
       "Jaboatão dos Guararapes"
     ],
-    "answer": 42,
+    "answer": "42",
     "distance": {},
     "variance": {},
     "size": {}
@@ -33,7 +33,7 @@
     "highlights": [
       "São Lourenço da Mata"
     ],
-    "answer": 33,
+    "answer": "33",
     "distance": {},
     "variance": {},
     "size": {}
@@ -42,6 +42,8 @@
     "id": "004C",
     "question_text": "Between Ipojuca (pink) and Cabo de Santo Agostinho(blue), which of the two cities is likely to rain less than 100mm?",
     "op": [
+      "Ipojuca",
+      "Cabo de Santo Agostinho"
     ],
     "highlights": [
       "Ipojuca",
@@ -56,6 +58,8 @@
     "id": "005C",
     "question_text": "From 0 to 100, what is the chance of rain less in Ipojuca(pink) than in Cabo de Santo Agostinho(blue)?",
     "op": [
+      "Ipojuca",
+      "Cabo de Santo Agostinho"
     ],
     "highlights": [
       "Ipojuca",
@@ -70,6 +74,8 @@
     "id": "006C",
     "question_text": "From 0 to 100, what is the chance of rain less in Recife(pink) than in Santa Cruz(blue)?",
     "op": [
+      "Recife",
+      "Santa Cruz"
     ],
     "highlights": [
       "Recife",
@@ -84,6 +90,8 @@
     "id": "007C",
     "question_text": "From 0 to 100, what is the chance of rain less in Jataúba(pink) than in Petrolândia(blue)?",
     "op": [
+      "Jataúba",
+      "Petrolândia"
     ],
     "highlights": [
       "Jataúba",
@@ -98,6 +106,8 @@
     "id": "008C",
     "question_text": "From 0 to 100, what is the chance of rain less in Tacaratú(pink) than in Araripina(blue)?",
     "op": [
+      "Tacaratu",
+      "Araripina"
     ],
     "highlights": [
       "Tacaratu",
@@ -110,8 +120,10 @@
   },
   {
     "id": "009C",
-    "question_text": "From 0 to 100, what is the chance of rain less in Saloá(pink) than in Pigeons(blue)?",
+    "question_text": "From 0 to 100, what is the chance of rain less in Saloá(pink) than in Pombos(blue)?",
     "op": [
+      "Saloá",
+      "Pombos"
     ],
     "highlights": [
       "Saloá",
@@ -126,6 +138,8 @@
     "id": "010C",
     "question_text": "From 0 to 100, what is the chance of rain less in Sertânia(pink) than in Parnamirim(blue)?",
     "op": [
+      "Sertânia",
+      "Parnamirim"
     ],
     "highlights": [
       "Sertânia",
@@ -140,6 +154,8 @@
     "id": "011C",
     "question_text": "Type the name of the city that is most likely to rain below 100mm?",
     "op": [
+      "Abreu e Lima", "Afogados da Ingazeira", "Afrânio", "Agrestina", "Água Preta", "Águas Belas", "Alagoinha", "Aliança", "Altinho", "Amaraji", "Angelim", "Araçoiaba", "Araripina", "Arcoverde", "Barra de Guabiraba", "Barreiros", "Belém de Maria", "Belém de São Francisco", "Belo Jardim", "Betânia", "Bezerros", "Bodocó", "Bom Conselho", "Bom Jardim", "Bonito", "Brejão", "Brejinho", "Brejo da Madre de Deus", "Buenos Aires", "Buíque", "Cabo de Santo Agostinho", "Cabrobó", "Cachoeirinha", "Caetés", "Calçado", "Calumbi", "Camaragibe", "Camocim de São Félix", "Camutanga", "Canhotinho", "Capoeiras", "Carnaíba", "Carnaubeira da Penha", "Carpina", "Caruaru", "Casinhas", "Catende", "Cedro", "Chã de Alegria", "Chã Grande", "Condado", "Correntes", "Cortês", "Cumaru", "Cupira", "Custódia", "Dormentes", "Escada", "Exu", "Feira Nova", "Ferreiros", "Flores", "Floresta", "Frei Miguelinho", "Gameleira", "Garanhuns", "Glória do Goitá", "Goiana", "Granito", "Gravatá", "Iati", "Ibimirim", "Ibirajuba", "Igarassu", "Iguaraci", "Inajá", "Ingazeira", "Ipojuca", "Ipubi", "Itacuruba", "Itaíba", "Ilha de Itamaracá", "Itambé", "Itapetim", "Itapissuma", "Itaquitinga", "Jaboatão dos Guararapes", "Jaqueira", "Jataúba", "Jatobá", "João Alfredo", "Joaquim Nabuco", "Jucati", "Jupi", "Jurema", "Lagoa do Carro", "Lagoa do Itaenga", "Lagoa do Ouro", "Lagoa dos Gatos", "Lagoa Grande",
+      "Lajedo", "Limoeiro", "Macaparana", "Machados", "Manari", "Maraial", "Mirandiba", "Moreno", "Nazaré da Mata", "Olinda", "Orobó", "Orocó", "Ouricuri", "Palmares", "Palmeirina", "Panelas", "Paranatama", "Parnamirim", "Passira", "Paudalho", "Paulista", "Pedra", "Pesqueira", "Petrolândia", "Petrolina", "Poção", "Pombos", "Primavera", "Quipapá", "Quixaba", "Recife", "Riacho das Almas", "Ribeirão", "Rio Formoso", "Sairé", "Salgadinho", "Salgueiro", "Saloá", "Sanharó", "Santa Cruz", "Santa Cruz da Baixa Verde", "Santa Cruz do Capibaribe", "Santa Filomena", "Santa Maria da Boa Vista", "Santa Maria do Cambucá", "Santa Terezinha", "São Benedito do Sul", "São Bento do Una", "São Caetano", "São João", "São Joaquim do Monte", "São José da Coroa Grande", "São José do Belmonte", "São José do Egito", "São Lourenço da Mata", "São Vicente Ferrer", "Serra Talhada", "Serrita", "Sertânia", "Sirinhaém", "Moreilândia", "Solidão", "Surubim", "Tabira", "Tacaimbó", "Tacaratu", "Tamandaré", "Taquaritinga do Norte", "Terezinha", "Terra Nova", "Timbaúba", "Toritama", "Tracunhaém", "Trindade", "Triunfo", "Tupanatinga", "Tuparetama", "Venturosa", "Verdejante", "Vertente do Lério", "Vertentes", "Vicência", "Vitória de Santo Antão", "Xexéu"
     ],
     "highlights": [
       ""
@@ -153,6 +169,8 @@
     "id": "012C",
     "question_text": "Type the name of the city that is least likely to rain below 100mm?",
     "op": [
+      "Abreu e Lima", "Afogados da Ingazeira", "Afrânio", "Agrestina", "Água Preta", "Águas Belas", "Alagoinha", "Aliança", "Altinho", "Amaraji", "Angelim", "Araçoiaba", "Araripina", "Arcoverde", "Barra de Guabiraba", "Barreiros", "Belém de Maria", "Belém de São Francisco", "Belo Jardim", "Betânia", "Bezerros", "Bodocó", "Bom Conselho", "Bom Jardim", "Bonito", "Brejão", "Brejinho", "Brejo da Madre de Deus", "Buenos Aires", "Buíque", "Cabo de Santo Agostinho", "Cabrobó", "Cachoeirinha", "Caetés", "Calçado", "Calumbi", "Camaragibe", "Camocim de São Félix", "Camutanga", "Canhotinho", "Capoeiras", "Carnaíba", "Carnaubeira da Penha", "Carpina", "Caruaru", "Casinhas", "Catende", "Cedro", "Chã de Alegria", "Chã Grande", "Condado", "Correntes", "Cortês", "Cumaru", "Cupira", "Custódia", "Dormentes", "Escada", "Exu", "Feira Nova", "Ferreiros", "Flores", "Floresta", "Frei Miguelinho", "Gameleira", "Garanhuns", "Glória do Goitá", "Goiana", "Granito", "Gravatá", "Iati", "Ibimirim", "Ibirajuba", "Igarassu", "Iguaraci", "Inajá", "Ingazeira", "Ipojuca", "Ipubi", "Itacuruba", "Itaíba", "Ilha de Itamaracá", "Itambé", "Itapetim", "Itapissuma", "Itaquitinga", "Jaboatão dos Guararapes", "Jaqueira", "Jataúba", "Jatobá", "João Alfredo", "Joaquim Nabuco", "Jucati", "Jupi", "Jurema", "Lagoa do Carro", "Lagoa do Itaenga", "Lagoa do Ouro", "Lagoa dos Gatos", "Lagoa Grande",
+      "Lajedo", "Limoeiro", "Macaparana", "Machados", "Manari", "Maraial", "Mirandiba", "Moreno", "Nazaré da Mata", "Olinda", "Orobó", "Orocó", "Ouricuri", "Palmares", "Palmeirina", "Panelas", "Paranatama", "Parnamirim", "Passira", "Paudalho", "Paulista", "Pedra", "Pesqueira", "Petrolândia", "Petrolina", "Poção", "Pombos", "Primavera", "Quipapá", "Quixaba", "Recife", "Riacho das Almas", "Ribeirão", "Rio Formoso", "Sairé", "Salgadinho", "Salgueiro", "Saloá", "Sanharó", "Santa Cruz", "Santa Cruz da Baixa Verde", "Santa Cruz do Capibaribe", "Santa Filomena", "Santa Maria da Boa Vista", "Santa Maria do Cambucá", "Santa Terezinha", "São Benedito do Sul", "São Bento do Una", "São Caetano", "São João", "São Joaquim do Monte", "São José da Coroa Grande", "São José do Belmonte", "São José do Egito", "São Lourenço da Mata", "São Vicente Ferrer", "Serra Talhada", "Serrita", "Sertânia", "Sirinhaém", "Moreilândia", "Solidão", "Surubim", "Tabira", "Tacaimbó", "Tacaratu", "Tamandaré", "Taquaritinga do Norte", "Terezinha", "Terra Nova", "Timbaúba", "Toritama", "Tracunhaém", "Trindade", "Triunfo", "Tupanatinga", "Tuparetama", "Venturosa", "Verdejante", "Vertente do Lério", "Vertentes", "Vicência", "Vitória de Santo Antão", "Xexéu"
     ],
     "highlights": [
       ""
@@ -170,7 +188,7 @@
     "highlights": [
       "Caruaru"
     ],
-    "answer": 50,
+    "answer": "50",
     "distance": {},
     "variance": {},
     "size": {}
@@ -183,7 +201,7 @@
     "highlights": [
       246
     ],
-    "answer": 75,
+    "answer": "75",
     "distance": {},
     "variance": {},
     "size": {}
@@ -196,7 +214,7 @@
     "highlights": [
       246
     ],
-    "answer": 83,
+    "answer": "83",
     "distance": {},
     "variance": {},
     "size": {}
@@ -209,7 +227,7 @@
     "highlights": [
       230
     ],
-    "answer": 33,
+    "answer": "33",
     "distance": {},
     "variance": {},
     "size": {}
@@ -218,6 +236,8 @@
     "id": "017T",
     "question_text": "Between Midtown South(pink) and Murray Hill(blue), which of the two areas is more likely to have fewer than 27000 cab rides?",
     "op": [
+      "Between Midtown South",
+      "Murray Hill"
     ],
     "highlights": [
       164,
@@ -230,28 +250,32 @@
   },
   {
     "id": "018T",
-    "question_text": "From 0 to 100, what is the chance that the number of cab rides in Midtown South(pink) will be less than Murray Hill(blue)?",
+    "question_text": "From 0 to 100, what is the chance that the number of cab rides in Clinton East(pink) will be less than Times Sq/Theatre District(blue)?",
     "op": [
+      "Clinton East",
+      "Times Sq/Theatre District"
     ],
     "highlights": [
-      164,
-      170
+      48,
+      230
     ],
-    "answer": "0",
+    "answer": "42",
     "distance": "Short",
     "variance": {},
     "size": {}
   },
   {
     "id": "019T",
-    "question_text": "From 0 to 100, what is the chance that the number of cab rides in West Village(pink) will be less than Upper East Side South(blue)?",
+    "question_text": "From 0 to 100, what is the chance that the number of cab rides in West Village(pink) will be less than Midtown North(blue)?",
     "op": [
+      "West Village",
+      "Midtown North"
     ],
     "highlights": [
       249,
-      237
+      163
     ],
-    "answer": "0",
+    "answer": "25",
     "distance": "Long",
     "variance": {},
     "size": {}
@@ -260,6 +284,8 @@
     "id": "020T",
     "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Lenox Hill West(pink) will be less than Gramercy(blue)?",
     "op": [
+      "Lenox Hill West",
+      "Gramercy"
     ],
     "highlights": [
       141,
@@ -274,6 +300,8 @@
     "id": "021T",
     "question_text": "From 0 to 100, what is the chance that the number of taxi rides in West Village(pink) will be less than Murray Hill(blue)?",
     "op": [
+      "West Village",
+      "Murray Hill"
     ],
     "highlights": [
       249,
@@ -288,6 +316,8 @@
     "id": "022T",
     "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Central Park(pink) will be lower than in Greenwich Village North(blue)?",
     "op": [
+      "Central Park",
+      "Greenwich Village North"
     ],
     "highlights": [
       43,
@@ -300,14 +330,16 @@
   },
   {
     "id": "023T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Clinton East(pink) will be lower than in East Chelsea(blue)?",
+    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Union Sq(pink) will be lower than in Midtown Center(blue)?",
     "op": [
+      "Union Sq",
+      "Midtown Center"
     ],
     "highlights": [
-      48,
-      68
+      234,
+      161
     ],
-    "answer": "0",
+    "answer": "42",
     "distance": {},
     "variance": {},
     "size": "Large"
@@ -316,6 +348,7 @@
     "id": "024T",
     "question_text": "Enter the name of the area most likely to have a taxi race number greater than 34000?",
     "op": [
+      "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
     ],
     "highlights": [
       ""
@@ -329,6 +362,7 @@
     "id": "025T",
     "question_text": "Enter the name of the area that is least likely to have a taxi race number greater than 14000?",
     "op": [
+      "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
     ],
     "highlights": [
       ""
@@ -346,7 +380,7 @@
     "highlights": [
       107
     ],
-    "answer": 25000,
+    "answer": "25000",
     "distance": {},
     "variance": {},
     "size": {}
