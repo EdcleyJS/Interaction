@@ -560,9 +560,9 @@ $(document).ready(function () {
 			    url: $(this).attr('action'),
 			    data : $(this).serialize(),
 			    success: function(result, status, request){
-			    	sucesso++;
-			    	refresh();
 			        console.log(nameform.id+" Estado atual ---\n" + status + "\nResultado: " + JSON.stringify(result));
+			        sucesso++;
+			    	refresh();
 			        //end=true;
 			    },
 			    error: function (request, status, erro) {
@@ -573,5 +573,10 @@ $(document).ready(function () {
 			    }
 		    });
 	    return false;
+	});
+	$('input[type=radio][name=inlineRadioOptions]').change(function() {
+	    if (this.value == 'Yes') {
+	        $('.alert').removeClass("show");
+	    }
 	});
 });
