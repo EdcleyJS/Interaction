@@ -896,6 +896,16 @@ function geraperguntas(perguntas,index,vis){
 }
 // QUANDO O RECPATHCA É COMPLETADO SUBMETE OS FORMS.
 function recaptcha_callback(){
+  tempofinal= new Date();
+  duracaoPerguntas= tempofinal-tempotutorial;
+  duracaoPerguntas=math.round(((duracaoPerguntas/1000)/60)*100)/100;
+
+  duracao= tempofinal-tempoinicial;
+  duracao=math.round(((duracao/1000)/60)*100)/100;
+  $('#duracaototal').val(duracao);
+  $('#duracaotutorial').val(duracaotutorial);
+  $('#duracaoperguntas').val(duracaoPerguntas);
+
   $('#5Form').submit();
   $('#feedback').val($('#feedback2').val());
   $('#ordem').val(arr.join());
