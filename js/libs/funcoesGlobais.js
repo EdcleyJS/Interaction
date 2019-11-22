@@ -718,12 +718,14 @@ function geraperguntas(perguntas,index,vis){
 
       var input1= document.createElement("input");
       input1.setAttribute('type','hidden');
+      input1.setAttribute('class','clicks');
       input1.setAttribute('id','CLC'+pergunta.id+vis);
       input1.setAttribute('name','CLC'+pergunta.id+vis);
       input1.setAttribute('value','');
 
       var input2= document.createElement("input");
       input2.setAttribute('type','hidden');
+      input2.setAttribute('class','tempo');
       input2.setAttribute('id','TMP'+pergunta.id+vis);
       input2.setAttribute('name','TMP'+pergunta.id+vis);
       input2.setAttribute('value','');
@@ -803,12 +805,14 @@ function geraperguntas(perguntas,index,vis){
       div1.setAttribute('class',"form-group col-md-4");
       var input1= document.createElement("input");
       input1.setAttribute('type','hidden');
+      input1.setAttribute('class','clicks');
       input1.setAttribute('id','CLC'+pergunta.id+vis);
       input1.setAttribute('name','CLC'+pergunta.id+vis);
       input1.setAttribute('value','');
 
       var input2= document.createElement("input");
       input2.setAttribute('type','hidden');
+      input2.setAttribute('class','tempo');
       input2.setAttribute('id','TMP'+pergunta.id+vis);
       input2.setAttribute('name','TMP'+pergunta.id+vis);
       input2.setAttribute('value','');
