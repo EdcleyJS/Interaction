@@ -599,7 +599,7 @@ function colorM(media){
 function cmp(dist1,dist2){
   var count=0;
   dist1.forEach(function(d,i){
-    if(dist2[i]<dist1[i]){
+    if(dist1[i]<dist2[i]){
       count++;
     }
   });
@@ -616,42 +616,6 @@ function shuffle(array) {
   }
   return array;
 }
-// QUANDO INVOCADA ESSA FUNÇÃO COMPARA DUAS ÁREAS RETORNA A PROBABILIDADE DE UMA SER MAIOR QUE A OUTRA.
-function comparando(e){
-  var exists=false;
-    selecionados.forEach(function(d,i){
-      if(e.target.feature.properties.name==d.target.feature.properties.name){
-        exists=true;
-      }
-    });
-    if(exists==false && selecionados.length<3){
-      var layer = e.target;
-      layer.setStyle({
-        weight: 1.5,
-        color: 'black',
-        fillOpacity: 0.7
-      });
-      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-      }
-      selecionados.push(e);
-      if(selecionados.length==2){
-        GeoLayer.clearLayers();
-        var newdata=[];
-        selecionados.forEach(function(d,i){
-          newdata.push(d.target.feature);
-        });
-        compare(newdata);
-      }
-    }else if(exists==true && selecionados.length==2){
-      selecionados=[];
-      inicio(dataset);
-    }else if(exists){
-      var filtered = selecionados.filter(function(el) { return el.target.feature.properties.name != e.target.feature.properties.name; }); 
-      selecionados=filtered;
-      GeoLayer.resetStyle(e.target);
-    }
-}
 // ENCONTRA UM OBJETO DENTRO DE UM ARRAY POR UMA CHAVE ID.
 function findP(array,id){
   var p;
@@ -665,28 +629,6 @@ function findP(array,id){
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
-//QUANDO INVOCADA ESSA FUNÇÃO COMPARA UMA AREA COM AS DEMAIS PARA TECNICA DE INTERVALO.
-function whenClicked(e) {              
-  var slider = $("#example_id").data("ionRangeSlider");
-  var elem = document.getElementById("#example_id");
-  if(featurename==e.target.feature.properties.name){
-    featurename=undefined;
-    inicio(dataset);
-    if(elem!=null){
-      slider.update({
-        disable:false
-      });
-    }
-  }else{
-    featurename=e.target.feature.properties.name;
-    compare(dataset);
-    if(elem!=null){
-      slider.update({
-        disable:true
-      });
-    }
-  }
-}
 
 // ESSA FUNÇÃO EMBARALHA AS PERGUNTAS CONTIDAS NO ARRAY DE PERGUNTAS E PREENCHE AUTOMATICAMENTO O HTML COM A NOVA ORDEM.
 function geraperguntas(perguntas,index,vis){
@@ -783,6 +725,8 @@ function geraperguntas(perguntas,index,vis){
       input8.setAttribute('value','');
       if(pergunta.id=="004C"||pergunta.id=="011C"||pergunta.id=="012C"||pergunta.id=="017T"||pergunta.id=="024T"||pergunta.id=="025T"){
         input8.setAttribute('placeholder','E.g. Caruaru');
+      }else if(pergunta.id=="026T"){
+        input8.setAttribute('placeholder','E.g. 15000');
       }else{
         input8.setAttribute('placeholder','E.g. 50');
       }
@@ -992,5 +936,418 @@ function infopropsTaxi(props){
       }else{
           return '<h4> Based information in Manhattan island - NYC/USA.</h4>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Values for the entire period.');
       }
+    }
+}
+
+//QUANDO INVOCADA ESSA FUNÇÃO COMPARA UMA AREA COM AS DEMAIS PARA TECNICA DE INTERVALO.
+function whenClicked(e) {
+  $('#slidert').addClass("disabledslider");
+  comparando(e);              
+  /*if(featurename==e.target.feature.properties.name){
+    featurename=undefined;
+  }else{
+    featurename=e.target.feature.properties.name;
+  }*/
+}
+function whenClickedC(e) {
+  $('#sliderc').addClass("disabledslider");
+  comparandoC(e);              
+}
+function whenClickedT(e) {
+  $('#slidertx').addClass("disabledslider");
+  comparandoT(e);              
+}
+function compare(dataset){
+  var probab= cmp(getDis(dataset[0].properties.name),getDis(dataset[1].properties.name));
+
+  infoVis02.remove();
+  if(layerTuto2!= null){
+      layerTuto2.clearLayers();
+  }
+  layerTuto2 =L.geoJson(dataset,
+    {style: function(feature){
+        if(opcoes.includes(feature.properties.name)){
+          if(opcoes[0]==feature.properties.name){
+            if(dataset[0].properties.name==feature.properties.name){
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#c51b7d'
+              };
+            }else{
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(1-probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#c51b7d'
+              };            
+            }
+          }else if(opcoes[1]==feature.properties.name){
+            if(dataset[0].properties.name==feature.properties.name){
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#053061'
+              };
+            }else{
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(1-probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#053061'
+              };            
+            }           
+          }
+        }else{
+          if(dataset[0].properties.name==feature.properties.name){
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: "#"+colorR(probab),
+              dashArray: '3',
+              fillOpacity: 0.9,
+              color: 'black'
+            };
+          }else{
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: "#"+colorR(1-probab),
+              dashArray: '3',
+              fillOpacity: 0.9,
+              color: 'black'
+            };            
+          }
+        }
+    },
+      onEachFeature: function (feature,layer) {
+        //Criação do Popup de cada feature/polígono contendo o nome do proprietário e o cep de localização do edíficio/lote.
+          if(dataset[0].properties.name==feature.properties.name){
+            var total=probab;
+          }else{
+            var total=1-probab;
+          }
+        layer.bindPopup(""+feature.properties.name+": "+Math.round(total*100)+"%");
+        layer.on({
+          dblclick: whenClicked
+        });
+        layer.on('mouseover', function (e) {
+            highlightFeature(e);
+            this.openPopup();
+        });
+        layer.on('mouseout', function (e) {
+            layerTuto2.resetStyle(e.target);
+            this.closePopup();
+        });
+      }
+  }).addTo(mapVis02);
+  infoVis02.update = function (props) {
+      this._div.innerHTML= infoprops(props);
+  };
+  infoVis02.addTo(mapVis02);
+}
+function compareC(dataset){
+  var probab= cmp(getDis(dataset[0].properties.name),getDis(dataset[1].properties.name));
+
+  infoRange.remove();
+  if(LayerRange!= null){
+      LayerRange.clearLayers();
+  }
+  LayerRange =L.geoJson(dataset,
+    {style: function(feature){
+        if(opcoes.includes(feature.properties.name)){
+          if(opcoes[0]==feature.properties.name){
+            if(dataset[0].properties.name==feature.properties.name){
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#c51b7d'
+              };
+            }else{
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(1-probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#c51b7d'
+              };            
+            }
+          }else if(opcoes[1]==feature.properties.name){
+            if(dataset[0].properties.name==feature.properties.name){
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#053061'
+              };
+            }else{
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(1-probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#053061'
+              };            
+            }           
+          }
+        }else{
+          if(dataset[0].properties.name==feature.properties.name){
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: "#"+colorR(probab),
+              dashArray: '3',
+              fillOpacity: 0.9,
+              color: 'black'
+            };
+          }else{
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: "#"+colorR(1-probab),
+              dashArray: '3',
+              fillOpacity: 0.9,
+              color: 'black'
+            };            
+          }
+        }
+    },
+      onEachFeature: function (feature,layer) {
+        //Criação do Popup de cada feature/polígono contendo o nome do proprietário e o cep de localização do edíficio/lote.
+          if(dataset[0].properties.name==feature.properties.name){
+            var total=probab;
+          }else{
+            var total=1-probab;
+          }
+        layer.bindPopup(""+feature.properties.name+": "+Math.round(total*100)+"%");
+        layer.on({
+          dblclick: whenClickedC
+        });
+        layer.on('mouseover', function (e) {
+            highlightFeature(e);
+            this.openPopup();
+        });
+        layer.on('mouseout', function (e) {
+            LayerRange.resetStyle(e.target);
+            this.closePopup();
+        });
+      }
+  }).addTo(mapRange);
+  infoRange.update = function (props) {
+    this._div.innerHTML= infoprops(props);
+  };
+  infoRange.addTo(mapRange);
+}
+function compareT(dataset){
+  var probab= cmp(distribuicaoNYC(dataset[0].properties.OBJECTID),distribuicaoNYC(dataset[1].properties.OBJECTID));
+
+  infoTaxi.remove();
+  if(LayerTaxi!= null){
+      LayerTaxi.clearLayers();
+  }
+  LayerTaxi =L.geoJson(dataset,
+    {style: function(feature){
+        if(opcoes.includes(feature.properties.OBJECTID)){
+          if(opcoes[0]==feature.properties.OBJECTID){
+            if(dataset[0].properties.OBJECTID==feature.properties.OBJECTID){
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#c51b7d'
+              };
+            }else{
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(1-probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#c51b7d'
+              };            
+            }
+          }else if(opcoes[1]==feature.properties.OBJECTID){
+            if(dataset[0].properties.OBJECTID==feature.properties.OBJECTID){
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#053061'
+              };
+            }else{
+              return {
+                weight: 3.5,
+                opacity: 1,
+                fillColor: "#"+colorR(1-probab),
+                dashArray: '3',
+                fillOpacity: 0.9,
+                color: '#053061'
+              };            
+            }      
+          }
+        }else{
+          if(dataset[0].properties.OBJECTID==feature.properties.OBJECTID){
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: "#"+colorR(probab),
+              dashArray: '3',
+              fillOpacity: 0.9,
+              color: 'black'
+            };
+          }else{
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: "#"+colorR(1-probab),
+              dashArray: '3',
+              fillOpacity: 0.9,
+              color: 'black'
+            };            
+          }
+        }
+    },
+      onEachFeature: function (feature,layer) {
+        //Criação do Popup de cada feature/polígono contendo o nome do proprietário e o cep de localização do edíficio/lote.
+          if(dataset[0].properties.OBJECTID==feature.properties.OBJECTID){
+            var total=probab;
+          }else{
+            var total=1-probab;
+          }
+        layer.bindPopup(""+feature.properties.zone+": "+Math.round(total*100)+"%");
+        layer.on({
+          dblclick: whenClickedT
+        });
+        layer.on('mouseover', function (e) {
+            highlightFeature(e);
+            this.openPopup();
+        });
+        layer.on('mouseout', function (e) {
+            LayerTaxi.resetStyle(e.target);
+            this.closePopup();
+        });
+      }
+  }).addTo(mapVistaxi);
+  infoTaxi.update = function (props) {
+    this._div.innerHTML= infopropsTaxi(props);
+  };
+  infoTaxi.addTo(mapVistaxi);
+}
+// QUANDO INVOCADA ESSA FUNÇÃO COMPARA DUAS ÁREAS RETORNA A PROBABILIDADE DE UMA SER MAIOR QUE A OUTRA
+function comparando(e){
+  //console.log(e);
+  var exists=false;
+    selecionados.forEach(function(d,i){
+      if(e.target.feature.properties.name==d.target.feature.properties.name){
+        exists=true;
+      }
+    });
+    if(exists==false && selecionados.length<3){
+      var layer = e.target;
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+      }
+      selecionados.push(e);
+      if(selecionados.length==2){
+        layerTuto2.clearLayers();
+        var newdata=[];
+        selecionados.forEach(function(d,i){
+          newdata.push(d.target.feature);
+        });
+        compare(newdata);
+      }
+    }else if(exists==true && selecionados.length<=2){
+      selecionados=[];
+      $('#slidert').removeClass("disabledslider");
+      Vis02TutorialFunction(dataset,true);
+    }else if(exists){
+      var filtered = selecionados.filter(function(el) { return el.target.feature.properties.name != e.target.feature.properties.name; }); 
+      selecionados=filtered;
+      layerTuto2.resetStyle(e.target);
+    }
+}
+function comparandoC(e){
+  //console.log(e);
+  var exists=false;
+    selecionadosC.forEach(function(d,i){
+      if(e.target.feature.properties.name==d.target.feature.properties.name){
+        exists=true;
+      }
+    });
+    if(exists==false && selecionadosC.length<3){
+      var layer = e.target;
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+      }
+      selecionadosC.push(e);
+      if(selecionadosC.length==2){
+        LayerRange.clearLayers();
+        var newdata=[];
+        selecionadosC.forEach(function(d,i){
+          newdata.push(d.target.feature);
+        });
+        compareC(newdata);
+      }
+    }else if(exists==true && selecionadosC.length<=2){
+      selecionadosC=[];
+      $('#sliderc').removeClass("disabledslider");
+      inicioRange(dataset);
+    }else if(exists){
+      var filtered = selecionadosC.filter(function(el) { return el.target.feature.properties.name != e.target.feature.properties.name; }); 
+      selecionadosC=filtered;
+      LayerRange.resetStyle(e.target);
+    }
+}
+function comparandoT(e){
+  //console.log(e);
+  var exists=false;
+    selecionadosT.forEach(function(d,i){
+      if(e.target.feature.properties.OBJECTID==d.target.feature.properties.OBJECTID){
+        exists=true;
+      }
+    });
+    if(exists==false && selecionadosT.length<3){
+      var layer = e.target;
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+      }
+      selecionadosT.push(e);
+      if(selecionadosT.length==2){
+        LayerTaxi.clearLayers();
+        var newdata=[];
+        selecionadosT.forEach(function(d,i){
+          newdata.push(d.target.feature);
+        });
+        compareT(newdata);
+      }
+    }else if(exists==true && selecionadosT.length<=2){
+      selecionadosT=[];
+      $('#slidertx').removeClass("disabledslider");
+      inicioTaxi(datasettaxi);
+    }else if(exists){
+      var filtered = selecionadosT.filter(function(el) { return el.target.feature.properties.name != e.target.feature.properties.name; }); 
+      selecionadosT=filtered;
+      LayerTaxi.resetStyle(e.target);
     }
 }

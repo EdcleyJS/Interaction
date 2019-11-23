@@ -35,6 +35,10 @@ html, body, #map {
     cursor: default;
     opacity: 0.6;
 }
+.disabledslider {
+    pointer-events: none;
+    opacity: 0.4;
+}
 .disabled > a{
   color: white;
 }

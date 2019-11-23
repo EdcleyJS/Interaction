@@ -20,7 +20,7 @@
     "highlights": [
       "Jaboatão dos Guararapes"
     ],
-    "answer": "42",
+    "answer": "56",
     "distance": {},
     "variance": {},
     "size": {}
@@ -65,7 +65,7 @@
       "Ipojuca",
       "Cabo de Santo Agostinho"
     ],
-    "answer": "66",
+    "answer": "67",
     "distance": "Short",
     "variance": {},
     "size": {}
@@ -81,7 +81,7 @@
       "Recife",
       "Santa Cruz"
     ],
-    "answer": "15",
+    "answer": "14",
     "distance": "Long",
     "variance": {},
     "size": {}
@@ -97,7 +97,7 @@
       "Jataúba",
       "Petrolândia"
     ],
-    "answer": "64",
+    "answer": "50",
     "distance": {},
     "variance": "Low",
     "size": {}
@@ -113,7 +113,7 @@
       "Tacaratu",
       "Araripina"
     ],
-    "answer": "48",
+    "answer": "47",
     "distance": {},
     "variance": "High",
     "size": {}
@@ -145,7 +145,7 @@
       "Sertânia",
       "Parnamirim"
     ],
-    "answer": "53",
+    "answer": "36",
     "distance": {},
     "variance": {},
     "size": "Large"
@@ -208,13 +208,13 @@
   },
   {
     "id": "015T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxis in the West Chelsea/Hudson Yards(pink) area is over 35000?",
+    "question_text": "From 0 to 100, what is the chance that the number of taxis in the West Chelsea/Hudson Yards(pink) area is over 20000?",
     "op": [
     ],
     "highlights": [
       246
     ],
-    "answer": "83",
+    "answer": "8",
     "distance": {},
     "variance": {},
     "size": {}
@@ -236,7 +236,7 @@
     "id": "017T",
     "question_text": "Between Midtown South(pink) and Murray Hill(blue), which of the two areas is more likely to have fewer than 27000 cab rides?",
     "op": [
-      "Between Midtown South",
+      "Midtown South",
       "Murray Hill"
     ],
     "highlights": [
@@ -291,7 +291,7 @@
       141,
       107
     ],
-    "answer": "84",
+    "answer": "83",
     "distance": {},
     "variance": "Low",
     "size": {}

@@ -369,16 +369,16 @@ $(document).ready(function () {
 			var ent= $(this).parent().find('.form-group > div > div> div >').siblings()[0].name;
 			var entid= $(this).parent().find('.form-group > div > div> div >').siblings()[0].id;
 			if($('input[name='+ent+']:checked').val()==undefined && $('input[name='+ent+']').hasClass('custom-control-input')==true){
+				//console.log("1");
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else if($('input[name='+ent+']').val()==""&& $('input[name='+ent+']').hasClass('custom-control-input')==false){
 				$(this).parent().parent()[0].classList.add('was-validated');
+				//console.log("2");
 			}else if($('#'+entid).val()==undefined && $('#'+entid).children().length>0){
 				$(this).parent().parent()[0].classList.add('was-validated');
+				//console.log("3");
 			}else{
 			   	var formName=$(this).parent().parent()[0].id;
-			   	if($(this).parent().parent().hasClass('was-validated')){
-					$(this).parent().parent()[0].classList.remove("was-validated");
-				}
 			   	opcoes=[];
 			   	/*if(formName=='Form'){
 			   		stepper1.next();
@@ -392,6 +392,14 @@ $(document).ready(function () {
 			    	inicio(dataset);
 			   	}else */if(formName=='2Form'){
 			   		stepper2.next();
+			   		$('#slidertx').removeClass("disabledslider");
+			   		$('#sliderc').removeClass("disabledslider");
+			   		selecionadosC=[];
+			   		selecionadosT=[];
+			   		$(this).parent().parent().removeClass("was-validated");
+			   		/*if($(this).parent().parent().hasClass('was-validated')){
+						$(this).parent().parent()[0].classList.remove("was-validated");
+					}*/
 			   		var id= $(this).parent().next().find('div >div > div>').siblings()[0].id;
 			   		var base=id.substring(3,4);
 					id=id.substring(0, 4);
