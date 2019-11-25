@@ -282,7 +282,7 @@ $(document).ready(function () {
 		/*if (event.detail.indexStep==1) {
 			InicioDot();
 		}*/
-		if(event.detail.indexStep==4){
+		if(event.detail.indexStep==5){
 			mapVis02.invalidateSize();
 		  	opcoes=['Recife','Caruaru'];
     		Vis02TutorialFunction(dataset,true);
