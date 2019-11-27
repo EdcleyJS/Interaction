@@ -221,7 +221,11 @@ legendRange.onAdd = function (map) {
     grades.push((0.1*i).toFixed(2));
   }*/
   for (var i = (gradesR.length-1); i >=0 ; i--) {
-    div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i>'+(gradesR[i]*100)+'%</br>';
+    if(i==0||i==8){
+      div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i>'+(gradesR[i]*100)+'%</br>';
+    }else{
+      div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i></br>';
+    }
   }
   return div;
 };
@@ -318,7 +322,11 @@ legendVis02.onAdd = function (map) {
     grades.push((0.1*i).toFixed(2));
   }*/
   for (var i = (gradesR.length-1); i >=0 ; i--) {
-    div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i>'+(gradesR[i]*100)+'%</br>';
+    if(i==0||i==8){
+      div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i>'+(gradesR[i]*100)+'%</br>';
+    }else{
+      div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i></br>';
+    }
   }
   return div;
 };
@@ -427,7 +435,11 @@ legendTaxi.onAdd = function (map) {
     grades.push((0.1*i).toFixed(2));
   }*/
   for (var i = (gradesR.length-1); i >=0 ; i--) {
-    div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i>'+(gradesR[i]*100)+'%</br>';
+    if(i==0||i==8){
+      div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i>'+(gradesR[i]*100)+'%</br>';
+    }else{
+      div.innerHTML +='<i style="color:#'+colorR(gradesR[i])+'; background:#'+colorR(gradesR[i])+'"></i></br>';
+    }
   }
   return div;
 };
