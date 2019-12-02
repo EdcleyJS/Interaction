@@ -1137,10 +1137,11 @@ function compareTodos(newdata,dataset){
         var probab= cmp(getDis(newdata[0].properties.name),getDis(feature.properties.name));
           if(newdata[0].properties.name==feature.properties.name){
             var total=probab;
+            layer.bindPopup("Area chosen to compare with others.");
           }else{
             var total=1-probab;
+            layer.bindPopup(""+feature.properties.name+": "+Math.round(total*100)+"%");
           }
-        layer.bindPopup(""+feature.properties.name+": "+Math.round(total*100)+"%");
         layer.on({
           dblclick: whenClicked
         });
@@ -1339,10 +1340,11 @@ function compareTodosC(newdata,dataset){
         var probab= cmp(getDis(newdata[0].properties.name),getDis(feature.properties.name));
         if(newdata[0].properties.name==feature.properties.name){
           var total=probab;
+          layer.bindPopup("Area chosen to compare with others.");
         }else{
           var total=1-probab;
+          layer.bindPopup(""+feature.properties.name+": "+Math.round(total*100)+"%");
         }
-        layer.bindPopup(""+feature.properties.name+": "+Math.round(total*100)+"%");
         layer.on({
           dblclick: whenClickedC
         });
@@ -1541,10 +1543,11 @@ function compareTodosT(newdata,dataset){
       var probab= cmp(distribuicaoNYC(newdata[0].properties.OBJECTID),distribuicaoNYC(feature.properties.OBJECTID));
         if(newdata[0].properties.OBJECTID==feature.properties.OBJECTID){
           probab=probab;
+          layer.bindPopup("Area chosen to compare with others.");
         }else{
           probab=1-probab;
+          layer.bindPopup(""+feature.properties.zone+": "+Math.round(probab*100)+"%");
         }
-        layer.bindPopup(""+feature.properties.zone+": "+Math.round(probab*100)+"%");
         layer.on({
           dblclick: whenClickedT
         });

@@ -282,7 +282,7 @@ $(document).ready(function () {
 		/*if (event.detail.indexStep==1) {
 			InicioDot();
 		}*/
-		if(event.detail.indexStep==5){
+		if(event.detail.indexStep==6){
 			mapVis02.invalidateSize();
 		  	opcoes=['Recife','Caruaru'];
     		Vis02TutorialFunction(dataset,true);
@@ -392,8 +392,6 @@ $(document).ready(function () {
 			    	inicio(dataset);
 			   	}else */if(formName=='2Form'){
 			   		stepper2.next();
-			   		$('#slidertx').removeClass("disabledslider");
-			   		$('#sliderc').removeClass("disabledslider");
 			   		selecionadosC=[];
 			   		selecionadosT=[];
 			   		$(this).parent().parent().removeClass("was-validated");
@@ -413,11 +411,13 @@ $(document).ready(function () {
 						$('#taxiview').hide();
 				    	mapRange.invalidateSize();
 						inicioRange(dataset);
+						$('#sliderc').removeClass("disabledslider");
 					}else if(base=='T'){
 						$('#taxiview').show();
 						$('#chuvaview').hide();
 						mapVistaxi.invalidateSize();
 						inicioTaxi(datasettaxi);
+						$('#slidertx').removeClass("disabledslider");
 					}
 			   	}/*else if(formName=='4Form'){
 			   		stepper4.next();

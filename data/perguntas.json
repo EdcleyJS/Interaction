@@ -1,7 +1,7 @@
 [
   {
     "id": "001C",
-    "question_text": "From 0 to 100, what is the chance of rain in Recife(pink) below 100mm?",
+    "question_text": "What is the chance of rain in Recife(pink) below 100mm?",
     "op": [
     ],
     "highlights": [
@@ -14,7 +14,7 @@
   },
   {
     "id": "002C",
-    "question_text": "From 0 to 100, what is the chance of rain in Jaboatão dos Guararapes(pink) above 100mm?",
+    "question_text": "What is the chance of rain in Jaboatão dos Guararapes(pink) above 100mm?",
     "op": [
     ],
     "highlights": [
@@ -27,7 +27,7 @@
   },
   {
     "id": "003C",
-    "question_text": "From 0 to 100, what is the chance of rain in São Lourenço da Mata(pink) between 50 and 150mm?",
+    "question_text": "What is the chance of rain in São Lourenço da Mata(pink) between 50 and 150mm?",
     "op": [
     ],
     "highlights": [
@@ -56,7 +56,7 @@
   },
   {
     "id": "005C",
-    "question_text": "From 0 to 100, what is the chance of rain less in Ipojuca(pink) than in Cabo de Santo Agostinho(blue)?",
+    "question_text": "What is the chance of rain less in Ipojuca(pink) than in Cabo de Santo Agostinho(blue)?",
     "op": [
       "Ipojuca",
       "Cabo de Santo Agostinho"
@@ -72,7 +72,7 @@
   },
   {
     "id": "006C",
-    "question_text": "From 0 to 100, what is the chance of rain less in Recife(pink) than in Santa Cruz(blue)?",
+    "question_text": "What is the chance of rain less in Recife(pink) than in Santa Cruz(blue)?",
     "op": [
       "Recife",
       "Santa Cruz"
@@ -88,7 +88,7 @@
   },
   {
     "id": "007C",
-    "question_text": "From 0 to 100, what is the chance of rain less in Jataúba(pink) than in Petrolândia(blue)?",
+    "question_text": "What is the chance of rain less in Jataúba(pink) than in Petrolândia(blue)?",
     "op": [
       "Jataúba",
       "Petrolândia"
@@ -104,7 +104,7 @@
   },
   {
     "id": "008C",
-    "question_text": "From 0 to 100, what is the chance of rain less in Tacaratú(pink) than in Araripina(blue)?",
+    "question_text": "What is the chance of rain less in Tacaratú(pink) than in Araripina(blue)?",
     "op": [
       "Tacaratu",
       "Araripina"
@@ -120,7 +120,7 @@
   },
   {
     "id": "009C",
-    "question_text": "From 0 to 100, what is the chance of rain less in Saloá(pink) than in Pombos(blue)?",
+    "question_text": "What is the chance of rain less in Saloá(pink) than in Pombos(blue)?",
     "op": [
       "Saloá",
       "Pombos"
@@ -136,7 +136,7 @@
   },
   {
     "id": "010C",
-    "question_text": "From 0 to 100, what is the chance of rain less in Sertânia(pink) than in Parnamirim(blue)?",
+    "question_text": "What is the chance of rain less in Sertânia(pink) than in Parnamirim(blue)?",
     "op": [
       "Sertânia",
       "Parnamirim"
@@ -195,7 +195,7 @@
   },
     {
     "id": "014T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxis in the West Chelsea/Hudson Yards(pink) area will be less than 18000?",
+    "question_text": "What is the chance that the number of taxis in the West Chelsea/Hudson Yards(pink) area will be less than 18000?",
     "op": [
     ],
     "highlights": [
@@ -208,7 +208,7 @@
   },
   {
     "id": "015T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxis in the West Chelsea/Hudson Yards(pink) area is over 20000?",
+    "question_text": "What is the chance that the number of taxis in the West Chelsea/Hudson Yards(pink) area is over 20000?",
     "op": [
     ],
     "highlights": [
@@ -221,7 +221,7 @@
   },
   {
     "id": "016T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxis in the Times Sq/Theater District(pink) area is between 18000 and 35000?",
+    "question_text": "What is the chance that the number of taxis in the Times Sq/Theater District(pink) area is between 18000 and 35000?",
     "op": [
     ],
     "highlights": [
@@ -250,7 +250,7 @@
   },
   {
     "id": "018T",
-    "question_text": "From 0 to 100, what is the chance that the number of cab rides in Clinton East(pink) will be less than Times Sq/Theatre District(blue)?",
+    "question_text": "What is the chance that the number of cab rides in Clinton East(pink) will be less than Times Sq/Theatre District(blue)?",
     "op": [
       "Clinton East",
       "Times Sq/Theatre District"
@@ -266,7 +266,7 @@
   },
   {
     "id": "019T",
-    "question_text": "From 0 to 100, what is the chance that the number of cab rides in West Village(pink) will be less than Midtown North(blue)?",
+    "question_text": "What is the chance that the number of cab rides in West Village(pink) will be less than Midtown North(blue)?",
     "op": [
       "West Village",
       "Midtown North"
@@ -282,7 +282,7 @@
   },
   {
     "id": "020T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Lenox Hill West(pink) will be less than Gramercy(blue)?",
+    "question_text": "What is the chance that the number of taxi rides in Lenox Hill West(pink) will be less than Gramercy(blue)?",
     "op": [
       "Lenox Hill West",
       "Gramercy"
@@ -298,7 +298,7 @@
   },
   {
     "id": "021T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in West Village(pink) will be less than Murray Hill(blue)?",
+    "question_text": "What is the chance that the number of taxi rides in West Village(pink) will be less than Murray Hill(blue)?",
     "op": [
       "West Village",
       "Murray Hill"
@@ -314,7 +314,7 @@
   },
   {
     "id": "022T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Central Park(pink) will be lower than in Greenwich Village North(blue)?",
+    "question_text": "What is the chance that the number of taxi rides in Central Park(pink) will be lower than in Greenwich Village North(blue)?",
     "op": [
       "Central Park",
       "Greenwich Village North"
@@ -330,7 +330,7 @@
   },
   {
     "id": "023T",
-    "question_text": "From 0 to 100, what is the chance that the number of taxi rides in Union Sq(pink) will be lower than in Midtown Center(blue)?",
+    "question_text": "What is the chance that the number of taxi rides in Union Sq(pink) will be lower than in Midtown Center(blue)?",
     "op": [
       "Union Sq",
       "Midtown Center"
