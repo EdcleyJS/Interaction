@@ -97,7 +97,7 @@
       "Jataúba",
       "Petrolândia"
     ],
-    "answer": "50",
+    "answer": "64",
     "distance": {},
     "variance": "Low",
     "size": {}
@@ -145,7 +145,7 @@
       "Sertânia",
       "Parnamirim"
     ],
-    "answer": "36",
+    "answer": "53",
     "distance": {},
     "variance": {},
     "size": "Large"
@@ -360,14 +360,14 @@
   },
   {
     "id": "025T",
-    "question_text": "Enter the name of the area that is least likely to have a taxi race number greater than 14000?",
+    "question_text": "Enter the name of the area that is least likely to have a taxi race number greater than 3500?",
     "op": [
       "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
     ],
     "highlights": [
       ""
     ],
-    "answer": "Stuy Town/Peter Cooper Village",
+    "answer": "Roosevelt Island",
     "distance": {},
     "variance": {},
     "size": {}
