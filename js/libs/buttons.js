@@ -5,10 +5,6 @@ d3.json("./data/perguntas.json",function(error,data){
 	novodataset=data;
 });
 $(document).ready(function () {
-	perguntasT1=shuffle(perguntasT1);
-	perguntasT2=shuffle(perguntasT2);
-	perguntasT3=shuffle(perguntasT3);
-	perguntasT4=shuffle(perguntasT4);
 	//PREENCHE TODAS AS PERGUNTAS.
 	arr=shuffle(arr);
 	arr.forEach(function(d,i){
@@ -150,31 +146,15 @@ $(document).ready(function () {
 	    arr[i]=d+1;
 	});
 	//COLOCAR AS TABS DAS PERGUNTAS EM ORDEM ALEATÓRIA
-	//var nv= $('#pills-tab > li');
-   //	var nvf=nv.slice(4,5);
-	//nv=nv.slice(0,4);
-	//nv=shuffle(nv);
-	//$('#pills-tab').empty();
-
-	//nv.each(function(d,i){
-	// 	$('#pills-tab').append(nv[d]);
-	//});
-	//$('#pills-tab').append(nvf);
 	$('#pills-tab >li >a')[0].click();
 	$('#pills-tab >li')[1].classList.add('disabled');
-	//$('#pills-tab >li')[2].classList.add('disabled');
-	//$('#pills-tab >li')[3].classList.add('disabled');
-	//$('#pills-tab >li')[4].classList.add('disabled');
 	// BLOCO PARA INICIAR OS STEPS DE CADA ETAPA DO SISTEMA 0 - TUTORIAL. 1- PROB. COM ALPHA. 2- PROB. COM INTERVALO. 3- PONTOS 4- MÉDIA ANIMADA. 
 	stepper0 = new Stepper($('.bs-stepper')[0]);
-	//stepper1 = new Stepper($('.bs-stepper')[1]);
 	stepper2 = new Stepper($('.bs-stepper')[1]);
-	//stepper3 = new Stepper($('.bs-stepper')[3]);
-	//stepper4 = new Stepper($('.bs-stepper')[4]);
 	//OCULTA A TELA INICIAL E EXIBE O TUTORIAL
 	$('#iniciar').click(function(){
 		if($('input[name ="inlineRadioOptions"]:checked').val()==undefined || $('input[name ="inlineRadioOptions"]:checked').val()=='No'){
-			$('.alert').addClass("show");//alert('Você Precisa aceitar os termos para começar.');
+			$('.alert').addClass("show");
 		}else{
 			$('.alert').removeClass("show");
 	    	$('#header').css('display','none');
@@ -279,30 +259,11 @@ $(document).ready(function () {
 	});
 	// PARA A ETAPA DE TUTORIAL CORRIGE O PROBLEMA DO TAMANHO DO MAPA POR CONTA DAS ANIMAÇÕES E INICIA OS MAPAS.
 	$('.bs-stepper')[0].addEventListener('shown.bs-stepper', function (event) {
-		/*if (event.detail.indexStep==1) {
-			InicioDot();
-		}*/
-		if(event.detail.indexStep==6){
+		if(event.detail.indexStep==5){
 			mapVis02.invalidateSize();
 		  	opcoes=['Recife','Caruaru'];
     		Vis02TutorialFunction(dataset,true);
     	}
-			/*mapVis04.invalidateSize();
-			opcoes=['Recife','Caruaru'];
-    		Vis04TutorialFunction(dataset);
-		}else if(event.detail.indexStep==7){
-			mapVis01.invalidateSize();
-		  	opcoes=['Recife','Caruaru'];
-    		Vis01TutorialFunction(dataset,false);
-		}else if(event.detail.indexStep==10){
-			mapVis02.invalidateSize();
-		  	opcoes=['Recife','Caruaru'];
-    		Vis02TutorialFunction(dataset,true);
-		}else if(event.detail.indexStep==13){
-			mapVis03.invalidateSize();
-		  	opcoes=['Recife','Caruaru'];
-	        Vis03TutorialFunction(dataset);
-		}*/
 	});
 	// PARA A ETAPA DE PERGUNTAS CORRIGE O PROBLEMA DO TAMANHO DO MAPA POR CONTA DAS ANIMAÇÕES E INICIA OS MAPAS QUANDO UMA TAB MUDA.
     $("a[href='#pills-profile']").on('shown.bs.tab', function(e) {
@@ -326,78 +287,26 @@ $(document).ready(function () {
 			mapVistaxi.invalidateSize();
 			inicioTaxi(datasettaxi);
 		}
-	});/*
-	$("a[href='#pills-dotmap']").on('shown.bs.tab', function(e) {
-	    mapDot.invalidateSize();
-		var id= $('#3Form > div.active > div > div > div > div> input')[0].id;
-		id=id.substring(0, 3);
-		var p=findP(perguntasT3,id);
-		p=p.slice(2,p.length);
-		opcoes=[];
-		p.forEach(function(d,i){
-			opcoes.push(d);
-		});
-		inicioDotMap(dataset);
 	});
-	$("a[href='#pills-media']").on('shown.bs.tab', function(e) {
-	    mapMedia.invalidateSize();
-	    var id= $('#4Form > div.active > div > div > div > div> input')[0].id;
-		id=id.substring(0, 3);
-		var p=findP(perguntasT4,id);
-		p=p.slice(2,p.length);
-		opcoes=[];
-		p.forEach(function(d,i){
-		    opcoes.push(d);
-		});
-		inicioMedia(dataset);
-	});*/
-	/*$("a[href='#pills-home']").on('shown.bs.tab', function(e) {
-		map.invalidateSize();
-	    var id= $('#Form > div.active > div > div > div > div> input')[0].id;
-	    id=id.substring(0, 3);
-	    var p=findP(novodataset,id);
-		p=p.highlights;//p.slice(2,p.length);
-	    opcoes=[];
-	    p.forEach(function(d,i){
-	    	opcoes.push(d);
-	    });
-	    inicio(dataset);
-	});*/
 	// VALIDA AS RESPOSTAS DOS FORMS, DESTACA AS ÁREAS PERGUNTADAS E SETA OS VALORES DE TEMPO E CLICK PARA CADA PERGUNTA.
 	$(".btn-next-form").click(function() {
 		if($(this).hasClass('tutorial')==false){
 			var ent= $(this).parent().find('.form-group > div > div> div >').siblings()[0].name;
 			var entid= $(this).parent().find('.form-group > div > div> div >').siblings()[0].id;
 			if($('input[name='+ent+']:checked').val()==undefined && $('input[name='+ent+']').hasClass('custom-control-input')==true){
-				//console.log("1");
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else if($('input[name='+ent+']').val()==""&& $('input[name='+ent+']').hasClass('custom-control-input')==false){
 				$(this).parent().parent()[0].classList.add('was-validated');
-				//console.log("2");
 			}else if($('#'+entid).val()==undefined && $('#'+entid).children().length>0){
 				$(this).parent().parent()[0].classList.add('was-validated');
-				//console.log("3");
 			}else{
 			   	var formName=$(this).parent().parent()[0].id;
 			   	opcoes=[];
-			   	/*if(formName=='Form'){
-			   		stepper1.next();
-			   		var id= $(this).parent().next().find('div >div > div> input')[0].id;
-			    	id=id.substring(0, 3);
-			   		var p=findP(novodataset,id);
-			    	p=p.highlights;//p.slice(2,p.length);
-			    	p.forEach(function(d,i){
-			    		opcoes.push(d);
-			    	});
-			    	inicio(dataset);
-			   	}else */if(formName=='2Form'){
+				if(formName=='2Form'){
 			   		stepper2.next();
 			   		selecionadosC=[];
 			   		selecionadosT=[];
 			   		$(this).parent().parent().removeClass("was-validated");
-			   		/*if($(this).parent().parent().hasClass('was-validated')){
-						$(this).parent().parent()[0].classList.remove("was-validated");
-					}*/
 			   		var id= $(this).parent().next().find('div >div > div>').siblings()[0].id;
 			   		var base=id.substring(3,4);
 					id=id.substring(0, 4);
@@ -419,28 +328,7 @@ $(document).ready(function () {
 						inicioTaxi(datasettaxi);
 						$('#slidertx').removeClass("disabledslider");
 					}
-			   	}/*else if(formName=='4Form'){
-			   		stepper4.next();
-			   		var id= $(this).parent().next().find('div >div > div> input')[0].id;
-			    	id=id.substring(0, 3);
-			   		var p=findP(perguntasT4,id);
-			    	p=p.slice(2,p.length);
-			    	p.forEach(function(d,i){
-			    		opcoes.push(d);
-			    	});
-			    	inicioMedia(dataset);
-			   	}else{
-			   		stepper3.next();
-					var id= $('#3Form > div.active > div > div > div > div> input')[0].id;
-				    id=id.substring(0, 3);
-				    var p=findP(perguntasT3,id);
-				    p=p.slice(2,p.length);
-				    opcoes=[];
-				    p.forEach(function(d,i){
-				    	opcoes.push(d);
-				    });
-					inicioDotMap(dataset);
-			   	}*/
+			   	}
 				$(this).parent().find('.form-group > div >.clicks')[0].value = clicks;
 				d2 = new Date();
 				diff = Math.abs(d1-d2)/1000;
@@ -461,27 +349,11 @@ $(document).ready(function () {
 				tempotutorial= new Date();
 				duracaotutorial= tempotutorial-tempoinicial;
 				duracaotutorial= math.round(((duracaotutorial/1000)/60)*100)/100;
-				
 				alpha=0;
 				clicks=0;
-				//if(pontos!= undefined){
-				//	pontos.clearLayers();
-				//}
-				//hops=true;
 				$('#tutorial').css('display','none');
 	    		$('#vis').css('display','');
-	    		/*if($('#Form').is(':visible')){
-					map.invalidateSize();
-					var id= $('Form > div.active > div > div > div > div> input')[0].id;
-				    id=id.substring(0, 3);
-				    var p=findP(novodataset,id);
-			    	p=p.highlights;
-				    opcoes=[];
-				    p.forEach(function(d,i){
-				    	opcoes.push(d);
-				    });
-				    inicio(dataset);
-				}else */if($('#2Form').is(':visible')){
+				if($('#2Form').is(':visible')){
 					mapRange.invalidateSize();
 					mapVistaxi.invalidateSize();
 					var id= $('#2Form > div.active > div > div > div > div>').siblings()[0].id;
@@ -508,29 +380,7 @@ $(document).ready(function () {
 						mapVistaxi.invalidateSize();
 						inicioTaxi(datasettaxi);
 					}
-				}/*else if($('#4Form').is(':visible')){
-					mapMedia.invalidateSize();
-					var id= $('#4Form > div.active > div > div > div > div> input')[0].id;
-				    id=id.substring(0, 3);
-				    var p=findP(perguntasT4,id);
-				    p=p.slice(2,p.length);
-				    opcoes=[];
-				    p.forEach(function(d,i){
-				    	opcoes.push(d);
-				    });
-				    inicioMedia(dataset);
-				}else{
-					mapDot.invalidateSize();
-					var id= $('#3Form > div.active > div > div > div > div> input')[0].id;
-				    id=id.substring(0, 3);
-				    var p=findP(perguntasT3,id);
-				    p=p.slice(2,p.length);
-				    opcoes=[];
-				    p.forEach(function(d,i){
-				    	opcoes.push(d);
-				    });
-					inicioDotMap(dataset);
-				}*/
+				}
 			}else{
 				stepper0.next();
 			}
@@ -540,12 +390,8 @@ $(document).ready(function () {
 		stepper0.previous();
 	});
 	$("#btn1,#2btn1,#3btn1,#4btn1,#btuto10").css('float','right');
-
 	// PARA CADA BOTÃO DA ÚLTIMA PERGUNTA DE CADA TÉCNICA PREPARA A PRÓXIMA TAB PARA SER EXIBIDA.
 	$("#btn1,#2btn1,#3btn1,#4btn1").click(function() {
-		/*if($('input[name='+ent+']:checked').val()==undefined){
-			$(this).parent().parent()[0].classList.add('was-validated');
-		}*/
 		var ent= $(this).parent().find('.form-group > div > div> div >').siblings()[0].name;
 		if($('input[name='+ent+']:checked').val()==undefined && $('input[name='+ent+']').hasClass('custom-control-input')==true){
 			$(this).parent().parent()[0].classList.add('was-validated');
@@ -577,13 +423,11 @@ $(document).ready(function () {
 			        console.log(nameform.id+" Estado atual ---\n" + status + "\nResultado: " + JSON.stringify(result));
 			        sucesso++;
 			    	refresh();
-			        //end=true;
 			    },
 			    error: function (request, status, erro) {
 			      	console.log(nameform.id+" Problema ocorrido: " + status + "\nDescrição: " + erro);
 			      	$.ajax(this);
 			      	return;
-			      	//nameform.submit();
 			    }
 		    });
 	    return false;

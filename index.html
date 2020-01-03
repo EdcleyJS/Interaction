@@ -20,16 +20,9 @@
 		<script type="text/javascript" src="./js/libs/funcoesGlobais.js"></script>
 		<script type="text/javascript" src="./js/libs/d3.v4.min.js"></script>
 		<script type="text/javascript" src="./js/libs/math.min.js"></script>
-		<script type="text/javascript" src='./js/libs/turf.min.js'></script>
-		<script type="text/javascript" src="./js/libs/multithread.js"></script>
-		<!--<script type="text/javascript" src="./js/animacao.js"></script>-->
-		<script type="text/javascript" src="./js/perguntas.js"></script>
 		<!-- JQuery Specific-->
 		<script type="text/javascript" src="./js/libs/buttons.js"></script>
 		<script type="text/javascript" src="./js/libs/c071df3350.js"></script>
-
-		<script src="https://d3js.org/d3.v3.min.js"></script>
-		<script src="https://d3js.org/d3-polygon.v1.min.js"></script>
 		<!--CSS-->
 		<link rel="shortcut icon" type="image/png" href="./data/favicon-96x96.png"/>
 		<link rel="shortcut icon" type="image/png" href="./data/favicon-96x96.png"/>
@@ -41,7 +34,6 @@
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/ion.rangeSlider.min.css"/>
 		<link rel="stylesheet" type="text/css" href="./css/bs-stepper.min.css">
-		
 	</head>
 	<body>
 		<header class="w3-container w3-sand w3-center" style="padding:28px 16px" id='header'>
@@ -50,7 +42,6 @@
 		  	<div class="w3-row-padding  w3-container">
 			  	<div class="w3-content">
 			    	<div style="text-align: justify;" class="w3-margin-left">
-				      
 						<h3> <b> Goal </b> </h3>
 						We ask that you participate in this study because you have the right profile to contribute to our research. <br>
 							- The aim of this study is to find out the most effective way to portray risks and uncertainties for geographic data visualization for people with and without visualization experience (graphs and the like) and statistics (collection, recording and analysis of numerical sample data). <br>
@@ -63,21 +54,9 @@
 
 						<h3> <b> Basic Instructions </b> </h3>
 							- On the following pages will appear 2 steps of the tool tutorial followed by the Q&amp;A about the tool. <br>
-							- It is important to carefully read each instruction given. <br>
-							- When prompted answer the questions properly as taught in the tutorial step. <br>
-							- Do your best and complete each question as quickly as you can. <br>
-
-						<h3> <b> About the questions: </b> </h3>
 							- In the next screens you will be introduced the search tool. <br>
 							- There will be one approache to map visualization.
-							- Each approach will be presented below and you will be able to interact before starting the study.
-							- The order of the techniques in the tutorial may not be the same in the study.
-							- You will not be informed if you have hit or not. <br>
-							- Once you submit an answer, you cannot go back to the previous question and change the answer.
 							- We estimate that it may take between 30 and 40 minutes to complete the questionnaire, so please set aside a time when you can calmly do so. <br>
-							- Response time will be counted, so please don't take breaks between responses. <br>
-							- Please do not use calculator, pencil or paper to assemble your answers. <br>
-							- Please do not search for explanations about hte approaches during this study. <br>
 
 						<h3> <b> Technical Remarks: </b> </h3>
 							- Before you start the tutorial and questions, we request some information about yourself and your experience with data visualization and statistics. These questions are important to understand better the research context. <br>
@@ -166,63 +145,7 @@
 					                <span class="bs-stepper-circle">7th</span>
 					                <span class="bs-stepper-label">Step</span>
 					            </button>
-					        </div>
-					        <div class="step tamanho" data-target="#tuto-form-8">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger8" aria-controls="tuto-form-8" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">8th</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>
-					        <!--
-
-					        <div class="step tamanho" data-target="#tuto-form-8">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger8" aria-controls="tuto-form-8" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">8th</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>
-					        <div class="step tamanho" data-target="#tuto-form-9">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger9" aria-controls="tuto-form-9" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">9th</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>	
-					        <div class="step tamanho" data-target="#tuto-form-10">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger10" aria-controls="tuto-form-10" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">10th</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>
-					        <div class="step tamanho" data-target="#tuto-form-11">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger11" aria-controls="tuto-form-11" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">11st</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>
-					        <div class="step tamanho" data-target="#tuto-form-12">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger12" aria-controls="tuto-form-12" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">12nd</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>
-					        <div class="step tamanho" data-target="#tuto-form-13">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger13" aria-controls="tuto-form-13" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">13rd</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>
-					        <div class="step tamanho" data-target="#tuto-form-14">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger14" aria-controls="tuto-form-14" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">14th</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>
-					        <div class="step tamanho" data-target="#tuto-form-15">
-					            <button type="button" class="step-trigger" data-toggle="tab" role="tab" id="stepperFormTutoTrigger15" aria-controls="tuto-form-15" aria-selected="false" disabled="disabled">
-					                <span class="bs-stepper-circle">15th</span>
-					                <span class="bs-stepper-label">Step</span>
-					            </button>
-					        </div>-->	        
+					        </div>        
 					    </div>
 						<div class="bs-stepper-content">
 							<div id="tuto-form-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepperFormTutoTrigger1">
@@ -253,9 +176,9 @@
 											      	<label for="genero">Enter your gender:</label>
 											      	<select id="genero" class="form-control" name="genero" required>
 											      		<option disabled selected value> Pick one </option>
-											        	<option>Male</option>
-											        	<option>Female</option>
-											        	<option>Don't wanna say.</option>
+											        	<option value="Masculino">Male</option>
+											        	<option value="Feminino">Female</option>
+											        	<option value="Não Desejo Opinar">Don't wanna say.</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
 													    You need choose one!
@@ -265,16 +188,16 @@
 											    	<label for="escolaridade">What is your educational level?</label>
 											    	<select id="escolaridade" class="form-control" name="escolaridade" required>
 											    		<option disabled selected value> Pick one </option>
-											    		<option>Incomplete high school</option>
-											        	<option>Complete high school</option>
-											        	<option>Incomplete undergraduate</option>
-											        	<option>Complete undergraduate</option>
-											        	<option>Incomplete specialization</option>
-											        	<option>Complete specialization</option>
-											        	<option>Incomplete master research</option>
-											        	<option>Complete master research</option>
-											        	<option>Incomplete doctorate degree</option>
-											        	<option>Complete doctorate degree</option>
+											    		<option value="Ensino Médio Incompleto">Incomplete high school</option>
+											        	<option value="Ensino Médio Completo">Complete high school</option>
+											        	<option value="Ensino Superior Incompleto">Incomplete undergraduate</option>
+											        	<option value="Ensino Superior Completo">Complete undergraduate</option>
+											        	<option value="Pós Graduação Incompleta">Incomplete specialization</option>
+											        	<option value="Pós Graduação Completa">Complete specialization</option>
+											        	<option value="Mestrado Incompleto">Incomplete master research</option>
+											        	<option value="Mestrado Completo">Complete master research</option>
+											        	<option value="Doutorado Incompleto">Incomplete doctorate degree</option>
+											        	<option value="Doutorado Completo">Complete doctorate degree</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
 													    You need choose one!
@@ -287,8 +210,8 @@
 											      	<label for="daltonico">Are you colorblind?</label>
 											      	<select id="daltonico" class="form-control" name="daltonico" required>
 											      		<option disabled selected value> Pick one </option>
-											        	<option>No</option>
-											        	<option>Yes</option>
+											        	<option value="Não">No</option>
+											        	<option value="Sim">Yes</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
 													    You need choose one!
@@ -298,8 +221,8 @@
 											      	<label for="estatistica">Do you have experience with statistics data?</label>
 											      	<select id="estatistica" class="form-control" name="estatistica" required>
 											      		<option disabled selected value> Pick one </option>
-											        	<option>No</option>
-											        	<option>Yes</option>
+											        	<option value="Não">No</option>
+											        	<option value="Sim">Yes</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
 													    You need choose one!
@@ -309,22 +232,14 @@
 											      	<label for="visualizacao">Do you have experience with data visualization? (graphs and the like)</label>
 											      	<select id="visualizacao" class="form-control" name="visualizacao" required>
 											      		<option disabled selected value> Pick one </option>
-											        	<option>No</option>
-											        	<option>Yes</option>
+											        	<option value="Não">No</option>
+											        	<option value="Sim">Yes</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
 													    You need choose one!
 													</div>
 											    </div>
 											</div>
-											<!--<div class="form-group">
-											    <div class="form-check">
-											      	<input class="form-check-input" type="checkbox" id="gridCheck">
-											      	<label class="form-check-label" for="gridCheck">
-											        	Check me out
-											     	</label>
-											    </div>
-										  	</div>-->
 										</form>
 								  	</div>
 								  	<div class="card-footer">
@@ -333,334 +248,6 @@
 								</div>
 					        </div>
 					        <div id="tuto-form-2" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger2">
-								<div class="card">
-								  	<div class="card-header">
-								  		<h3 class="card-title">Getting Started</h3>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													In the next screens you will be introduced the research tool.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													There will be four map visualization techniques.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Each technique will be presented below and you will be able to interact before starting the study.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													The order of the techniques in the tutorial may not be the same in the study.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													When you are ready to proceed just click the button below "Next."
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Previous</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial" id="btuto2">Next</button>
-								  	</div>
-								</div>								
-					        </div>
-					        <!--
-					        <div id="tuto-form-3" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger3">
-					        	<div class="card">
-								  	<div class="card-header">
-								  		<h2 class="card-title"><b>Gráficos Hipotéticos.</b></h2>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<h4>
-														O objetivo dessa técnica é exibir uma amostra extraída de resultados hipotéticos (sorteados) de uma distribuição. Para cada cidade, é criado um mapa que se torna uma espécie de quadro em uma apresentação animada que vai mudando com o passar do tempo dando a impressão de um filme. Você terá que juntar informações de vários quadros, usando o sistema visual ou algum processo mais mecânico, como a contagem para entender os dados. O valor da distribuição representada pela cidade é mapeado como uma cor para a cidade correspondente. Essa visualização usa um esquema de cores de extremidade única; quão alta ou baixa é o valor de cada cidade em cada quadro.
-													</h4>
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial">Next</button>
-								  	</div>
-								</div>					        	
-					        </div>
-					        <div id="tuto-form-4" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger4">
-					      		<div class="card">
-								  	<div class="card-header">
-								  		<h3 class="card-title">Gráficos Hipotéticos.</h3>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Nessa tela você verá a média mudando ao longo de meses aleatórios. E você deverá tomar decisões observando o comportamento das cidades.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<img src="./data/Media.jpg" alt="Nature" style="width:100%;height: auto;">
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O Ponto
-												<span class="badge badge-primary badge-pill">1</span>
-													 indica o nome da técnica que é exibida.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">2</span>
-													mostra que ao passar o mouse por cima das cidades detalhes são exibidos.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">3</span>
-													mostra os botões de para e continuar a animação.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">4</span>
-													mostra cidades destacadas, para encontrar uma cidade mais facilmente e tomarmos decisões sobre ela.
-												</div>
-											</li>											
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">5</span>
-													contém informações referente aos dados mostrados no mapa destacando um mês.
-												</div>
-											</li>
-
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">6</span>
-													mostra a legenda de cores que classifica os valores das cidades.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial" id="btuto9">Next</button>
-								  	</div>
-								</div>					        	
-					        </div>
-					        <div id="tuto-form-5" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger5">
-					        	<div class="card">
-								  	<div class="card-header">
-								  		<h3 class="card-title">Gráficos Hipotéticos.</h3>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Agora você poderá interagir com a visualização e ver como ela funciona.
-												</div>
-											</li>
-											<li class="list-group-item ">
-												<div id='vis04' style="height: 450px; width: 100%"></div>
-											</li>
-											<li class="list-group-item" style="text-align: center">
-												<button type="button" class="btn btn-primary" onclick="StartHOPS()">Animar</button>
-								  				<button type="button" class="btn btn-primary" onclick="StopHOPS()">Parar</button>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Observe as cidades onde você acredita que estão localizadas: Recife e Caruaru.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Em qual das duas cidades será que vai acontecer um evento de mais de 250?
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Agora Você pode repetir o processo com outras cidades e valores de sua escolha.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial">Next</button>
-								  	</div>
-								</div>
-					        </div>
-					        <div id="tuto-form-6" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger6">
-					       		<div class="card">
-								  	<div class="card-header">
-								  		<h2 class="card-title"><b>Comparação com um valor limite.</b></h2>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<h4>O Objetivo desta visualização é permitir que você descubra qual a chance (%) de uma distribuição ter valores menores do que um dado valor X comparando o valor X ao conjunto de valores que compõe a distribuição de cada cidade, cada cidades possui seu próprio conjunto de valores. Você pode arrastar uma linha horizontal que representa um valor X constante a ser comparado com o conjunto de valores que cada possui;<br> a probabilidade de a distribuição da cidade ser menor que esse valor constante é representada como uma cor para a cidade correspondente.<br> Uma escala de cores divergente é usada para representar o espaço total de "totalmente baixo" a "totalmente alto".
-													</h4>
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial">Next</button>
-								  	</div>
-								</div>
-					        </div>
-					        <div id="tuto-form-7" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger7">
-					        	<div class="card">
-								  	<div class="card-header">
-								  		<h3 class="card-title">Comparação com um valor limite.</h3>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Nessa tela você verá a probabilidade de um evento ocorrer até um dado valor limite. E você poderá escolher esse valor.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<img src="./data/Limiar.jpg" alt="Nature" style="width:100%;height: auto;">
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O Ponto
-												<span class="badge badge-primary badge-pill">1</span>
-													 indica o nome da técnica que é exibida.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">2</span>
-													indica o filtro onde um valor pode ser escolhido para verificar a probabilidade de um evento ser menor ou igual ao valor escolhido.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">3</span>
-													mostra que ao passar o mouse por cima das cidades detalhes são exibidos.
-												</div>
-											</li>											
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">4</span>
-													contém informações referente aos dados mostrados no mapa.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">5</span>
-													mostra cidades destacadas, para podermos encontra-las mais facilmente e tomarmos decisões sobre elas.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">6</span>
-													mostra a legenda de cores que classifica os valores das cidades.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial" id="btuto3">Next</button>
-								  	</div>
-								</div>
-					        </div>
-					        <div id="tuto-form-8" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger8">
-					        	<div class="card">
-								  	<div class="card-header">
-								  		<h3 class="card-title">Comparação com um valor limite.</h3>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Agora você poderá interagir com a visualização e ver como ela funciona.
-												</div>
-											</li>
-											<li class="list-group-item ">
-												<div id='vis01' style="height: 450px; width: 100%"></div>
-													<div style="border-style: dotted;">
-														<input type="text" id="Vis01Tuto" name="example_name" value="" />
-														<label for="Vis01Tuto"> Posicione o ponteiro para escolher um valor.</label>
-													</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Observe as cidades de Recife e Caruaru.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Qual a chance de acontecer um evento até 50 em cada cidade?
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Mova o cursor de seleção de valor X várias vezes quanto achar necessário e tente encontrar padrões de cores e diferenças para diferentes valores de X.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial" id="btuto4">Next</button>
-								  	</div>
-								</div>
-					        </div>-->
-					        <div id="tuto-form-3" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger3">
 					        	<div class="card">
 								  	<div class="card-header">
 								  		<h2 class="card-title"><b>Interaction.</b></h2>
@@ -670,8 +257,13 @@
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 													<h4>
-														The view with interaction allow compares a distribution of data to a range of values from X to Y resulting in the probability that an area will have values from its distribution that coincide with the specified range of X and Y values. Thus showing the chances that an area has to have values within of the specified range. You can drag and scale a horizontal range. The probability (% - chance) that the distribution represented by the area being contained in the region is mapped as a color to the corresponding area. This view uses a single end color scheme; whether the value is likely to be in or out of range.
+														The view with interaction allow compares a distribution of data to a range of values from X to Y resulting in the probability that an area will have values from its distribution that coincide with the specified range of X and Y values. Thus showing the probability that an area has to have values within of the specified range. You can drag and scale a horizontal range. The probability (%) that the distribution represented by the area being contained in the region is mapped as a color to the corresponding area. This view uses a single end color scheme; whether the value is likely to be in or out of range.
 													</h4>
+												</div>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+													In this study we use two types of data: 1st observed rainfall data in the state of Pernambuco-Brazil and 2nd taxi rides in the Manhattan Island area of New York. The data types used in each question will be specified in the question step.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -687,7 +279,7 @@
 								  	</div>
 								</div>
 					        </div>
-					        <div id="tuto-form-4" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger4">
+					        <div id="tuto-form-3" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger3">
 					        	<div class="card">
 								  	<div class="card-header">
 								  		<h3 class="card-title">Interaction.</h3>
@@ -711,7 +303,7 @@
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>The number
 												<span class="badge badge-primary badge-pill">2</span>
-													indicates the filter where a value can be chosen to verify the probability that an event is less than or equal to the chosen value.
+													indicates the horizontal bar that serves as a filter where a range can be chosen to verify the probability that each area contains the range chosen within its data distribution.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -751,7 +343,7 @@
 								  	</div>
 								</div>
 					        </div>
-					        <div id="tuto-form-5" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger5">
+					        <div id="tuto-form-4" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger4">
 					        	<div class="card">
 								  	<div class="card-header">
 								  		<h3 class="card-title">Interaction.</h3>
@@ -770,6 +362,11 @@
 											</li>	
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<img src="./data/func.gif" alt="Nature" style="width:100%;height: auto;">
+											</li>	
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													When you change the horizontal range values this reflects on the map the probability of the selected range belonging to each area the darker the color the greater the probability. Note that the horizontal bar you can move and select different range sizes the smaller the range the greater the accuracy that is reflected on the map.
+												</div>
 											</li>									
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
@@ -784,7 +381,7 @@
 								  	</div>
 								</div>
 					        </div>
-					        <div id="tuto-form-6" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger6">
+					        <div id="tuto-form-5" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger5">
 					        	<div class="card">
 								  	<div class="card-header">
 								  		<h3 class="card-title">Interaction.</h3>
@@ -812,12 +409,12 @@
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													For example if we want to know the chance of an event happening in Recife is smaller than in Caruaru. Then we double click on Caruaru and go to Recife to see what the chance is.
+													For example if we want to know the probability to rain in Recife is smaller than in Caruaru. Then we double click on Caruaru and go to Recife to see what the probability is.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Hovering over cities will give you a chance that the distribution of other cities is <em><b><u> smaller</u></b> </em> than you chose for comparison.
+													Hovering over cities will give you a probability that the distribution of other cities is <em><b><u> smaller</u></b> </em> than you chose for comparison.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -834,7 +431,12 @@
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
 													To undo just double click on the selected city for comparison.
 												</div>
-											</li>										
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													Remembering the last example: if we want to compare and know the probability of the Recife (pink) distribution being smaller than Caruaru (blue) double click Caruaru (blue) then hover over Recife and visualize the displayed value. Finally we undo the selection by double clicking on Caruaru.
+												</div>
+											</li>											
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 													When you are ready to proceed just click the button below "Next."
@@ -848,7 +450,7 @@
 								  	</div>
 								</div>
 					        </div>
-					        <div id="tuto-form-7" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger7">
+					        <div id="tuto-form-6" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger6">
 					        	<div class="card">
 								  	<div class="card-header">
 								  		<h3 class="card-title">Interaction.</h3>
@@ -857,7 +459,7 @@
 								  		<ul class="list-group">
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
-													You can now interact with the visualization and see how it works.
+													Before answering the questions you need to mentally answer the questions below. In this screen the tool is available for you to use and familiarize as much as you think necessary.
 												</div>
 											</li>
 											<li class="list-group-item ">
@@ -871,25 +473,55 @@
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Observe the areas of <b>Recife(pink)</b> and <b>Caruaru(blue)</b>.
+													First locate the areas of <b>Recife(pink)</b> and <b>Caruaru(blue)</b>.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Answer to yourself: <b> What is the chance of a 50 to 250 event in Recife? And Caruaru? </b>
+													For each question that will be asked in the next step one or two cities will be highlighted in blue and / or pink.
+												</div>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													Answer to yourself: <b> What is the probability to rain between 50 to 250 happen in Recife? And Caruaru? </b>
+												</div>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													Answer to yourself: <b> What is the probability to rain below 100 in Recife? And Caruaru? </b>
+												</div>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													Answer to yourself: <b> What is the probability to rain above 100 in Recife? And Caruaru? </b>
 												</div>
 											</li>
 											<li class = "list-group-item d-flex justify-content-align-items-center">
 												<div>
-													<span> <i class = "fa-caret-right" aria-hidden = "true"> </i> </span>
-													Answer to yourself: <b> What chance is there of an event in Recife being smaller than Caruaru? </b>
+													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													There will be comparison questions where you need to know how likely the pink area is to be less than the blue one. Using the tool answer to yourself: <b> What is the probability of raining in Recife (pink) be less than Caruaru (blue)? </b>
+												</div>
+											</li>
+											<li class = "list-group-item d-flex justify-content-align-items-center">
+												<div>
+													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													To compare areas we should always use the city that appears for last (highlighted in blue) as a parameter for comparison (double click). </b>
+												</div>
+											</li>
+											<li class = "list-group-item d-flex justify-content-align-items-center">
+												<div>
+													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													You need to pay attention to the question text to understand if you will use the horizontal value bar or double-click comparison.</b>
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Move the X-Y range value selection cursor as many times as necessary and try to find color patterns and differences for different X-values. Be sure to test different range lengths such as small, medium and large.
+													Use the tool as many times as necessary and try to find color patterns and differences for different scenarios. Be sure to test different parameters.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -905,139 +537,7 @@
 								  	</div>
 								</div>
 					        </div>
-					        <!--
-					        <div id="tuto-form-12" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger12">
-								<div class="card">
-								  	<div class="card-header">
-								  		<h2 class="card-title"><b>Pontos de Densidade.</b></h2>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<h4>
-														Essa técnica consiste em desenhar pontos que representam valores de uma distribuição de modo proporcional ao tamanho de uma cidade. Ela é usada para avaliar a probabilidade usando o sistema visual ou algum processo mais mecânico, como a contagem dos pontos para entender os dados. A distribuição representada pelos pontos nas cidades é (mapeada sempre proporcionalmente) como uma cor para o valor do ponto correspondente. Essa visualização também usa um esquema de cores de extremidade única; se é o valor do ponto é relativamente alto ou baixo.
-													</h4>
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial">Next</button>
-								  	</div>
-								</div>
-					        </div>
-					      	<div id="tuto-form-13" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger13">
-					      		<div class="card">
-								  	<div class="card-header">
-								  		<h3 class="card-title">Pontos de Densidade. </h3>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Nessa tela você verá a probabilidade distribuida em pontos que representam valores. E você poderá tomar decisões observando a distribuição.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<img src="./data/Pontos.jpg" alt="Nature" style="width:100%;height: auto;">
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O Ponto
-												<span class="badge badge-primary badge-pill">1</span>
-													 indica o nome da técnica que é exibida.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">2</span>
-													mostra que ao passar o mouse por cima das cidades detalhes são exibidos.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">3</span>
-													contém informações referente aos dados mostrados no mapa.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">4</span>
-													mostra cidades destacadas, para podermos encontra-las mais facilmente e tomarmos decisões sobre elas.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>O ponto
-												<span class="badge badge-primary badge-pill">5</span>
-													mostra a legenda de cores que classifica os valores das cidades.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial" id="btuto7">Next</button>
-								  	</div>
-								</div>
-					      	</div>
-					        <div id="tuto-form-14" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger14">
-					        	<div class="card">
-								  	<div class="card-header">
-								  		<h3 class="card-title">Pontos de Densidade.</h3>
-								  	</div>
-								  	<div class="card-block">
-								  		<ul class="list-group">
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Agora você poderá interagir com a visualização e ver como ela funciona.
-												</div>
-											</li>
-											<li class="list-group-item ">
-												<div id='vis03' style="height: 450px; width: 100%"></div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Observe as cidades onde você acredita que estão localizadas: Recife e Caruaru.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Em qual das duas cidades será que vai acontecer um evento de mais de 250?
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Agora Você pode repetir o processo com outras cidades e valores de sua escolha.
-												</div>
-											</li>
-											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>
-													Quando estiver pronto para continuar click em Next.
-												</div>
-											</li>
-										</ul>
-								  	</div>
-								  	<div class="card-footer">
-								  		<button type="button" class="btn btn-primary btn-previous-form">Voltar</button>
-								  		<button type="button" class="btn btn-primary btn-next-form tutorial" id="btuto8">Next</button>
-								  	</div>
-								</div>
-					        </div>-->
-					        <div id="tuto-form-8" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger8">
+					        <div id="tuto-form-7" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTutoTrigger7">
 					        	<div class="card">
 								  	<div class="card-header">
 								  		<h3 class="card-title">Question Template.</h3>
@@ -1065,11 +565,23 @@
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													<b>It is important to read and correctly interpret each question so as not to err.</b>
+												</div>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>The number
 												<span class="badge badge-primary badge-pill">3</span>
 													show the place where you must put your answer.
 												</div>
 											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													<b>Questions can be opened or closed (for you pick one option from one list). Whenever the question is about probability of something happening you should answer a value between 0 and 100. No need to add the symbol "%".</b>
+												</div>
+											</li>	
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>The number
 												<span class="badge badge-primary badge-pill">4</span>
@@ -1091,14 +603,38 @@
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													<b>You will not be informed if you have answered the question correctly or not.</b>
+												</div>
+											</li>	
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
 													<b> Attention!
 													Once you click the forward button for a question you will not be allowed to go back to the previous question. </b>
 												</div>
 											</li>
 											<li class = "list-group-item d-flex justify-content-align-items-center">
 												<div>
-												<span> <i class="fa fa-caret-right" aria-hidden="true"> </i> </span>
+												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
 												<b> If you don't know an answer you can put <u><em>"X"</em></u> in the answer with confidence 1 and move on.</b>
+												</div>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													Starting at the next screen your time to response will be counted, so be as <b>fast and accurate</b> as you can.
+												</div>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													<b>Please do not use a calculator, pencil or paper to form your answers.</b>
+												</div>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												<div>
+												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+													<b>Please do not search for explanations of the tool during this search.</b>
 												</div>
 											</li>
 										</ul>
@@ -1117,204 +653,14 @@
 		</div>
 		<div class="container-fluid" id='vis' style="display: none;">
 			<ul class="nav nav-pills" id="pills-tab" role="tablist">
-				<!--<li class="nav-item" >
-				    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><b>Comparação com um limite.</b></a>
-				</li>-->
 				<li class="nav-item">
 				    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><b>Interaction</b></a>
 				</li>
-				<!--				
 				<li class="nav-item">
-				    <a class="nav-link" id="pills-dotmap-tab" data-toggle="pill" href="#pills-dotmap" role="tab" aria-controls="pills-dotmap" aria-selected="false"><b>Pontos de Densidade</b></a>
-				</li>
-				<li class="nav-item">
-				    <a class="nav-link" id="pills-media-tab" data-toggle="pill" href="#pills-media" role="tab" aria-controls="pills-media" aria-selected="false"><b>Gráficos Hipotéticos</b></a>
-				</li>
-				-->
-				<li class="nav-item">
-				    <a class="nav-link" id="pills-confirmacao-tab" data-toggle="pill" href="#pills-confirmacao" role="tab" aria-controls="pills-confirmacao" aria-selected="false"><b>Confirmation</b></a>
+				    <a class="nav-link" id="pills-confirmacao-tab" data-toggle="pill" href="#pills-confirmacao" role="tab" aria-controls="pills-confirmacao" aria-selected="false"><b>Conclusion</b></a>
 				</li>		
 			</ul>
 			<div class="tab-content" id="pills-tabContent">
-				<!--
-				<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default">
-							<div id="vis6" style="height: 450px; width: 100%"></div>
-							<div style="border-style: dotted;">							
-								<input type="text" id="example_id" name="example_name" value=""/>
-								<label for="example_id"> Posicione o ponteiro para escolher um valor.</label>
-							</div>
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div id="stepperForm" class="bs-stepper linear">
-								<div class="card">
-									<div class="card-header">
-									    <div class="bs-stepper-header" role="tablist2">
-									        <div class="step active tamanhoP" data-target="#test-form-1" id='tablist1'>
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger1" aria-controls="test-form-1" aria-selected="true">
-									                <span class="bs-stepper-circle">1st</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        <div class="step tamanhoP" data-target="#test-form-2">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger2" aria-controls="test-form-2" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">2nd</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        <div class="step tamanhoP" data-target="#test-form-3">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger3" aria-controls="test-form-3" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">3rd</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        <div class="step tamanhoP" data-target="#test-form-4">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger4" aria-controls="test-form-4" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">4th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        <div class="step tamanhoP" data-target="#test-form-5">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger5" aria-controls="test-form-5" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">5th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        <div class="step tamanhoP" data-target="#test-form-6">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger6" aria-controls="test-form-6" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">6th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        <div class="step tamanhoP" data-target="#test-form-7">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger7" aria-controls="test-form-7" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">7th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-
-									        <div class="step tamanhoP" data-target="#test-form-8">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger8" aria-controls="test-form-8" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">8th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-
-									        <div class="step tamanhoP" data-target="#test-form-9">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger9" aria-controls="test-form-9" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">9th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>	
-
-									        <div class="step tamanhoP" data-target="#test-form-10">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger10" aria-controls="test-form-10" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">10th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>		
-
-									        <div class="step tamanhoP" data-target="#test-form-11">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger11" aria-controls="test-form-11" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">11st</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-
-									        <div class="step tamanhoP" data-target="#test-form-12">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger12" aria-controls="test-form-12" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">12nd</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>		
-									        <div class="step tamanhoP" data-target="#test-form-13">
-									            <button type="button" class="step-trigger" data-toggle="tab2" role="tab2" id="stepperFormTrigger13" aria-controls="test-form-13" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">13rd</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>			        
-									    </div>										
-									</div>
-									<div class="card-body">
-										<div class="bs-stepper-content">
-										    <form class="needs-validation" id="Form"
-										    method="post" action="https://script.google.com/macros/s/AKfycby_DzDKpY66Ti9OBL9s22I8u06XgPFP_SyUnuhCbB7bl3rzwRMc/exec">
-										        <div id="test-form-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepperFormTrigger1">
-										            <div class="form-group" id="1p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next1">Next</button>
-										        </div>
-										        <div id="test-form-2" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger2">
-										            <div class="form-group" id="2p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next2">Next</button>
-										        </div>
-										        <div id="test-form-3" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger3">
-										      		<div class="form-group" id='3p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next3">Next</button>
-										        </div>
-										        <div id="test-form-4" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger4">
-										      		<div class="form-group" id='4p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next4">Next</button>
-										        </div>
-										        <div id="test-form-5" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger5">
-										      		<div class="form-group" id='5p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next5">Next</button>
-										        </div>
-										        <div id="test-form-6" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger6">
-										      		<div class="form-group" id='6p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next6">Next</button>
-										            
-										        </div>
-										        <div id="test-form-7" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger7">
-										      		<div class="form-group" id='7p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next7">Next</button>
-										        </div>
-										        <div id="test-form-8" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger8">
-										      		<div class="form-group" id='8p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next8">Next</button>
-										        </div>
-										        <div id="test-form-9" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger9">
-										      		<div class="form-group" id='9p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next9">Next</button>
-										        </div>
-										        <div id="test-form-10" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger10">
-										      		<div class="form-group" id='10p'>
-										            </div>
-										            <button type="button" class="btn btn-primary" id="btn1">Next</button>
-										        </div>
-										        <div id="test-form-11" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger11">
-										      		<div class="form-group" id='11p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next11">Next</button>
-										        </div>
-										        <div id="test-form-12" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger12">
-										      		<div class="form-group" id='12p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="next12">Next</button>
-										        </div>
-										        <div id="test-form-13" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger13">
-										      		<div class="form-group" id='13p'>
-										            </div>
-										            <button type="button" class="btn btn-primary" id="btn1">Next</button>
-										        </div>
-										    </form>
-										</div>										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			-->
 				<div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default" id="chuvaview">
@@ -1324,9 +670,6 @@
 								<label for="sliderrange2"> Position the pointer to choose a value.
 								</label>
 							</div>
-
-							<!--<iframe src="./choroplethIntervalo.html" width="102.1%" height="639px" allowTransparency="true" scrolling="no" frameborder="0" 
-							marginheight="0" marginwidth='0' style="margin-left: -1.1%"></iframe>-->
 						</div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default" id="taxiview">
 							<div id="vistaxi" style="height: 450px; width: 100%"></div>
@@ -1335,9 +678,6 @@
 								<label for="sliderrangetaxi"> Position the pointer to choose a value.
 								</label>
 							</div>
-
-							<!--<iframe src="./choroplethIntervalo.html" width="102.1%" height="639px" allowTransparency="true" scrolling="no" frameborder="0" 
-							marginheight="0" marginwidth='0' style="margin-left: -1.1%"></iframe>-->
 						</div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
 							<h3>Questions</h3>
@@ -1350,166 +690,131 @@
 									        <div class="step active tamanhoP" data-target="#test-form-21">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger21" aria-controls="test-form-21" aria-selected="true">
 									                <span class="bs-stepper-circle">1st</span>
-									                
 									            </button>
 									        </div>
- 											
 									        <div class="step tamanhoP" data-target="#test-form-22">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger22" aria-controls="test-form-22" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">2nd</span>
-									                
 									            </button>
 									        </div>
- 											
 									        <div class="step tamanhoP" data-target="#test-form-23">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger23" aria-controls="test-form-23" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">3rd</span>
-									                
 									            </button>
 									        </div>
- 											
 									        <div class="step tamanhoP" data-target="#test-form-24">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger24" aria-controls="test-form-24" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">4th</span>
-									                
 									            </button>
 									        </div>
- 											
 									        <div class="step tamanhoP" data-target="#test-form-25">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger25" aria-controls="test-form-25" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">5th</span>
-									                
 									            </button>
 									        </div>
- 											
 									        <div class="step tamanhoP" data-target="#test-form-26">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger26" aria-controls="test-form-26" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">6th</span>
-									                
 									            </button>
 									        </div>
-									        
 									        <div class="step tamanhoP" data-target="#test-form-27">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger27" aria-controls="test-form-27" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">7th</span>
-									                
 									            </button>
 									        </div>
-
 									        <div class="step tamanhoP" data-target="#test-form-28">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger28" aria-controls="test-form-28" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">8th</span>
-									                
 									            </button>
 									        </div>
-
 									        <div class="step tamanhoP" data-target="#test-form-29">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger29" aria-controls="test-form-29" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">9th</span>
-									                
 									            </button>
 									        </div>
-
 									        <div class="step tamanhoP" data-target="#test-form-30">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger30" aria-controls="test-form-30" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">10th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-31">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger31" aria-controls="test-form-31" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">11st</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-32">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger32" aria-controls="test-form-32" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">12nd</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-33">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger33" aria-controls="test-form-33" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">13rd</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-34">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger34" aria-controls="test-form-34" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">14th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-35">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger35" aria-controls="test-form-35" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">15th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-36">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger36" aria-controls="test-form-36" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">16th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-37">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger37" aria-controls="test-form-37" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">17th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-38">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger38" aria-controls="test-form-38" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">18th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-39">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger39" aria-controls="test-form-39" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">19th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-40">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger40" aria-controls="test-form-40" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">20th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-41">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger41" aria-controls="test-form-41" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">21st</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-42">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger42" aria-controls="test-form-42" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">22nd</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-43">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger43" aria-controls="test-form-43" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">23rd</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-44">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger44" aria-controls="test-form-44" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">24th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-45">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger45" aria-controls="test-form-45" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">25th</span>
-									                
 									            </button>
 									        </div>
 									        <div class="step tamanhoP" data-target="#test-form-46">
 									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger46" aria-controls="test-form-46" aria-selected="false" disabled="disabled">
 									                <span class="bs-stepper-circle">26th</span>
-									                
 									            </button>
 									        </div>			        								                
 									    </div>									
@@ -1547,9 +852,7 @@
 										      		<div class="form-group" id='26p'>
 										            </div>
 										            <button type="button" class="btn btn-primary btn-next-form" id="3next6">Next</button>
-										            
 										        </div>
-										        
 										        <div id="test-form-27" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger27">
 										            <div class="form-group" id="27p">
 										            </div>
@@ -1663,308 +966,6 @@
 						</div>
 					</div>
 				</div>
-				<!--
-				<div class="tab-pane fade" id="pills-dotmap" role="tabpanel" aria-labelledby="pills-dotmap-tab">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div id="vis3" style="height: 450px; width: 100%"></div>	
-							<iframe src="./choroplethIntervalo.html" width="102.1%" height="639px" allowTransparency="true" scrolling="no" frameborder="0" 
-							marginheight="0" marginwidth='0' style="margin-left: -1.1%"></iframe>	
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div id="stepperForm3" class="bs-stepper linear">
-								<div class="card">
-									<div class="card-header">
-										<div class="bs-stepper-header" role="tablist">
-									        <div class="step active tamanhoP" data-target="#test-form-21">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger21" aria-controls="test-form-21" aria-selected="true">
-									                <span class="bs-stepper-circle">1st</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-22">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger22" aria-controls="test-form-22" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">2nd</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-23">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger23" aria-controls="test-form-23" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">3rd</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-24">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger24" aria-controls="test-form-24" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">4th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-25">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger25" aria-controls="test-form-25" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">5th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-26">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger26" aria-controls="test-form-26" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">6th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        
-									        <div class="step tamanhoP" data-target="#test-form-27">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger27" aria-controls="test-form-27" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">7th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-
-									        <div class="step tamanhoP" data-target="#test-form-28">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger28" aria-controls="test-form-28" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">8th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-
-									        <div class="step tamanhoP" data-target="#test-form-29">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger29" aria-controls="test-form-29" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">9th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-
-									        <div class="step tamanhoP" data-target="#test-form-30">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger30" aria-controls="test-form-30" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">10th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									    
-									    </div>
-									</div>
-									<div class="card-body">
-										<div class="bs-stepper-content">
-										    <form class="needs-validation"  novalidate="" id="3Form"
-										    method="post" action="https://script.google.com/macros/s/AKfycbxGJMYtzRu_4AgM8vhk38rpdI-bMVK5dGnCGJqiJvMv6ZC7nWNp/exec">
-										        <div id="test-form-21" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepperFormTrigger21">
-										            <div class="form-group" id="21p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="3next1">Next</button>
-										        </div>
-										        <div id="test-form-22" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger22">
-										            <div class="form-group" id="22p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="3next2">Next</button>
-										        </div>
-										        <div id="test-form-23" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger23">
-										      		<div class="form-group" id='23p'>
-										            </div>
-										            <button type="button" class="btn btn-primary  btn-next-form" id="3next3">Next</button>
-										        </div>
-										        <div id="test-form-24" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger24">
-										            <div class="form-group" id="24p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="3next4">Next</button>
-										        </div>
-										        <div id="test-form-25" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger25">
-										            <div class="form-group" id="25p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="3next5">Next</button>
-										        </div>
-										        <div id="test-form-26" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger26">
-										      		<div class="form-group" id='26p'>
-										            </div>
-										            
-										            <button type="button" class="btn btn-primary" id="3btn1">Next</button>
-										        </div>
-										        
-										        <div id="test-form-27" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger27">
-										            <div class="form-group" id="27p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="3next7">Next</button>
-										        </div>
-										        <div id="test-form-28" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger28">
-										            <div class="form-group" id="28p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="3next8">Next</button>
-										        </div>
-										        <div id="test-form-29" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger29">
-										      		<div class="form-group" id='29p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="3next9">Next</button>
-										        </div>
-										        <div id="test-form-30" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger30">
-										      		<div class="form-group" id='30p'>
-										            </div>
-										            <button type="button" class="btn btn-primary" id="3btn1">Next</button>
-										        </div>
-										    
-										    </form>
-										</div>										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			-->
-			<!--
-				<div class="tab-pane fade" id="pills-media" role="tabpanel" aria-labelledby="pills-media-tab">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div id="vis4" style="height: 450px; width: 100%"></div>
-							<div style="text-align: center;" class="card-body">
-								<button type="button" class="btn btn-primary" onclick="StartHOPS()">Animar</button>
-								<button type="button" class="btn btn-primary" onclick="StopHOPS()">Parar</button>
-							</div>
-							<iframe src="./media.html" width="102.1%" height="515px" allowTransparency="true" scrolling="no" frameborder="0" marginheight="0" marginwidth='0' style="margin-left: -1.1%"></iframe>
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div id="stepperForm4" class="bs-stepper linear">
-								<div class="card">
-									<div class="card-header">
-									    <div class="bs-stepper-header" role="tablist">
-									        <div class="step active tamanhoP" data-target="#test-form-31">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger31" aria-controls="test-form-31" aria-selected="true">
-									                <span class="bs-stepper-circle">1st</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-32">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger32" aria-controls="test-form-32" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">2nd</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-33">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger33" aria-controls="test-form-33" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">3rd</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 																				        
-									        <div class="step tamanhoP" data-target="#test-form-34">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger34" aria-controls="test-form-34" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">4th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-35">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger35" aria-controls="test-form-35" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">5th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
- 											
-									        <div class="step tamanhoP" data-target="#test-form-36">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger36" aria-controls="test-form-36" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">6th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        <div class="step tamanhoP" data-target="#test-form-37">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger37" aria-controls="test-form-37" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">7th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        
-									        <div class="step tamanhoP" data-target="#test-form-38">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger38" aria-controls="test-form-38" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">8th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        
-									        <div class="step tamanhoP" data-target="#test-form-39">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger39" aria-controls="test-form-39" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">9th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									        
-									        <div class="step tamanhoP" data-target="#test-form-40">
-									            <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger40" aria-controls="test-form-40" aria-selected="false" disabled="disabled">
-									                <span class="bs-stepper-circle">10th</span>
-									                <span class="bs-stepper-label">Pergunta</span>
-									            </button>
-									        </div>
-									    </div>
-									</div>
-									<div class="card-body">	
-										<div class="bs-stepper-content">
-										    <form class="needs-validation"  novalidate="" id="4Form"
-										    method="post" action="https://script.google.com/macros/s/AKfycbzLOg-MT8Zic3zc1fQGDCPl6Upu769FP75yT3KPlpb1LYO0NNTh/exec">
-										        <div id="test-form-31" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepperFormTrigger31">
-										            <div class="form-group" id="31p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="4next1">Next</button>
-										        </div>
-										        <div id="test-form-32" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger32">
-										            <div class="form-group" id="32p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="4next2">Next</button>
-										        </div>
-										        <div id="test-form-33" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger33">
-										      		<div class="form-group" id='33p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="4next3">Next</button>
-										        </div>
-										        <div id="test-form-34" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger34">
-										            <div class="form-group" id="34p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="4next4">Next</button>
-										        </div>
-										        <div id="test-form-35" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger35">
-										      		<div class="form-group" id='35p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="4next5">Next</button>
-										        </div>
-										        <div id="test-form-36" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger36">
-										      		<div class="form-group" id='36p'>
-										            </div>
-										            <button type="button" class="btn btn-primary" id="4btn1">Next</button>
-
-										        </div>
-										        <div id="test-form-37" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger37">
-										            <div class="form-group" id="37p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="4next7">Next</button>
-										        </div>
-										        <div id="test-form-38" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger38">
-										      		<div class="form-group" id='38p'>
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="4next8">Next</button>
-										        </div>
-										        <div id="test-form-39" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger39">
-										            <div class="form-group" id="39p">
-										            </div>
-										            <button type="button" class="btn btn-primary btn-next-form" id="4next9">Next</button>
-										        </div>
-										        <div id="test-form-40" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger40">
-										            <div class="form-group" id="40p">
-										            </div>
-										            <textarea hidden class="form-control" id="feedback" name="feedback" rows="3"></textarea>
-										            <button type="button" class="btn btn-primary" id="4btn1">Next</button>
-										        </div>						        
-										    </form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			-->
 				<div class="tab-pane fade" id="pills-confirmacao" role="tabpanel" aria-labelledby="pills-confirmacao-tab">
 					<div class="row">
 						<br>
@@ -1981,21 +982,16 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 							<label for="captcha"> To finish please check below that you're not a robot by clicking on the box.</label>
 							<div class="g-recaptcha" data-callback="recaptcha_callback" id="recaptcha" data-sitekey="6LemjbcUAAAAAOPbdsHEVuJodJikY0Xdsrf9nlMv" name='recaptcha' ></div>
-							<!--<div class="invalid-feedback" id="captchaError">
-								O captcha não pode ficar vazio
-							</div>-->
 						</div>
 					</div>
 				</div>			
 			</div>
-			<!---->
 		</div>
 		<footer class="w3-container w3-sand w3-center" style="padding:28px 16px; display: none;" id='footer'>
 		  	<div class="w3-row-padding w3-padding-64 w3-container">
 			  	<div class="w3-content">
 			    	<div class="w3-twothird">
 				      	<h1>Thank you for your participation!</h1>
-				      	<!--<h3>We ask that you wait 30 seconds before closing this page, meanwhile we are saving your responses.</h3>-->
 				      	<br>
 				      	<br>
 				      	<br>
@@ -2014,11 +1010,6 @@
 				      	<br>
 				      	<br>
 				      	<br>
-				      	<!--<h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-				      	<p class="w3-text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-				        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				        laboris nisi ut aliquip ex ea commodo consequat.</p>-->
 				        <br>
 				      	<br>
 				      	<br>
@@ -2047,9 +1038,6 @@
 				      	<br>
 				      	<br>
 				    </div>
-				    <!--<div class="w3-third w3-center">
-				      	<i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-				    </div>-->
 			  	</div>
 			</div>
 		</footer>
@@ -2057,9 +1045,5 @@
 		<script type="text/javascript" src="./js/libs/bs-stepper.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	</body>
-	<!--<script type="text/javascript" src="./js/dotmap.js"></script>-->
 	<script type="text/javascript" src="./js/choropleth.js"></script>
-
-	<!--<script type="text/javascript" src="./js/media.js"></script>-->
-
 </html>
