@@ -1,7 +1,7 @@
 [
   {
     "id": "001C",
-    "question_text": "What is the probability of rain in Recife(pink) below 100 mm?",
+    "question_text": "What is the probability that it will rain in Recife(pink) below 100 mm?",
     "op": [
     ],
     "highlights": [
@@ -14,7 +14,7 @@
   },
   {
     "id": "002C",
-    "question_text": "What is the probability of rain in Jaboatão dos Guararapes(pink) above 100 mm?",
+    "question_text": "What is the probability that it will rain in Jaboatão dos Guararapes(pink) above 100 mm?",
     "op": [
     ],
     "highlights": [
@@ -27,7 +27,7 @@
   },
   {
     "id": "003C",
-    "question_text": "What is the probability of rain in São Lourenço da Mata(pink) between 50 and 150 mm?",
+    "question_text": "What is the probability that it will rain in São Lourenço da Mata(pink) between 50 mm and 150 mm?",
     "op": [
     ],
     "highlights": [
@@ -40,7 +40,7 @@
   },
   {
     "id": "004C",
-    "question_text": "Between Ipojuca (pink) and Cabo de Santo Agostinho(blue), which of the two cities is most likely to rain bellow 100 mm?",
+    "question_text": "Between Ipojuca (pink) and Cabo de Santo Agostinho(blue), which of the two cities is most likely that it will rain below 100 mm?",
     "op": [
       "Ipojuca",
       "Cabo de Santo Agostinho"
@@ -50,13 +50,13 @@
       "Cabo de Santo Agostinho"
     ],
     "answer": "Ipojuca",
-    "distance": "Short",
+    "distance": {},
     "variance": {},
     "size": {}
   },
   {
     "id": "005C",
-    "question_text": "What is the probability of rain in Ipojuca(pink) be less than in Cabo de Santo Agostinho(blue)?",
+    "question_text": "What is the probability that it will rain in Ipojuca(pink) less than in Cabo de Santo Agostinho(blue)?",
     "op": [
       "Ipojuca",
       "Cabo de Santo Agostinho"
@@ -72,7 +72,7 @@
   },
   {
     "id": "006C",
-    "question_text": "What is the probability of rain in Recife(pink) be less than in Santa Cruz(blue)?",
+    "question_text": "What is the probability that it will rain in Recife(pink) less than in Santa Cruz(blue)?",
     "op": [
       "Recife",
       "Santa Cruz"
@@ -88,7 +88,7 @@
   },
   {
     "id": "007C",
-    "question_text": "What is the probability of rain in Jataúba(pink) be less than in Petrolândia(blue)?",
+    "question_text": "What is the probability that it will rain in Jataúba(pink) less than in Petrolândia(blue)?",
     "op": [
       "Jataúba",
       "Petrolândia"
@@ -104,7 +104,7 @@
   },
   {
     "id": "008C",
-    "question_text": "What is the probability of rain in Tacaratú(pink) be less than in Araripina(blue)?",
+    "question_text": "What is the probability that it will rain in Tacaratú(pink) less than in Araripina(blue)?",
     "op": [
       "Tacaratu",
       "Araripina"
@@ -120,7 +120,7 @@
   },
   {
     "id": "009C",
-    "question_text": "What is the probability of rain in Saloá(pink) be less than in Pombos(blue)?",
+    "question_text": "What is the probability that it will rain in Saloá(pink) less than in Pombos(blue)?",
     "op": [
       "Saloá",
       "Pombos"
@@ -136,7 +136,7 @@
   },
   {
     "id": "010C",
-    "question_text": "What is the probability of rain in Sertânia(pink) be less than in Parnamirim(blue)?",
+    "question_text": "What is the probability that it will rain in Sertânia(pink) less than in Parnamirim(blue)?",
     "op": [
       "Sertânia",
       "Parnamirim"
@@ -152,7 +152,7 @@
   },
   {
     "id": "011C",
-    "question_text": "Select in the list the name of the city that is most likely to rain below 100 mm?",
+    "question_text": "Select in the list the name of the area that is most likely that it will rain below 100 mm?",
     "op": [
       "Abreu e Lima", "Afogados da Ingazeira", "Afrânio", "Agrestina", "Água Preta", "Águas Belas", "Alagoinha", "Aliança", "Altinho", "Amaraji", "Angelim", "Araçoiaba", "Araripina", "Arcoverde", "Barra de Guabiraba", "Barreiros", "Belém de Maria", "Belém de São Francisco", "Belo Jardim", "Betânia", "Bezerros", "Bodocó", "Bom Conselho", "Bom Jardim", "Bonito", "Brejão", "Brejinho", "Brejo da Madre de Deus", "Buenos Aires", "Buíque", "Cabo de Santo Agostinho", "Cabrobó", "Cachoeirinha", "Caetés", "Calçado", "Calumbi", "Camaragibe", "Camocim de São Félix", "Camutanga", "Canhotinho", "Capoeiras", "Carnaíba", "Carnaubeira da Penha", "Carpina", "Caruaru", "Casinhas", "Catende", "Cedro", "Chã de Alegria", "Chã Grande", "Condado", "Correntes", "Cortês", "Cumaru", "Cupira", "Custódia", "Dormentes", "Escada", "Exu", "Feira Nova", "Ferreiros", "Flores", "Floresta", "Frei Miguelinho", "Gameleira", "Garanhuns", "Glória do Goitá", "Goiana", "Granito", "Gravatá", "Iati", "Ibimirim", "Ibirajuba", "Igarassu", "Iguaraci", "Inajá", "Ingazeira", "Ipojuca", "Ipubi", "Itacuruba", "Itaíba", "Ilha de Itamaracá", "Itambé", "Itapetim", "Itapissuma", "Itaquitinga", "Jaboatão dos Guararapes", "Jaqueira", "Jataúba", "Jatobá", "João Alfredo", "Joaquim Nabuco", "Jucati", "Jupi", "Jurema", "Lagoa do Carro", "Lagoa do Itaenga", "Lagoa do Ouro", "Lagoa dos Gatos", "Lagoa Grande",
       "Lajedo", "Limoeiro", "Macaparana", "Machados", "Manari", "Maraial", "Mirandiba", "Moreno", "Nazaré da Mata", "Olinda", "Orobó", "Orocó", "Ouricuri", "Palmares", "Palmeirina", "Panelas", "Paranatama", "Parnamirim", "Passira", "Paudalho", "Paulista", "Pedra", "Pesqueira", "Petrolândia", "Petrolina", "Poção", "Pombos", "Primavera", "Quipapá", "Quixaba", "Recife", "Riacho das Almas", "Ribeirão", "Rio Formoso", "Sairé", "Salgadinho", "Salgueiro", "Saloá", "Sanharó", "Santa Cruz", "Santa Cruz da Baixa Verde", "Santa Cruz do Capibaribe", "Santa Filomena", "Santa Maria da Boa Vista", "Santa Maria do Cambucá", "Santa Terezinha", "São Benedito do Sul", "São Bento do Una", "São Caetano", "São João", "São Joaquim do Monte", "São José da Coroa Grande", "São José do Belmonte", "São José do Egito", "São Lourenço da Mata", "São Vicente Ferrer", "Serra Talhada", "Serrita", "Sertânia", "Sirinhaém", "Moreilândia", "Solidão", "Surubim", "Tabira", "Tacaimbó", "Tacaratu", "Tamandaré", "Taquaritinga do Norte", "Terezinha", "Terra Nova", "Timbaúba", "Toritama", "Tracunhaém", "Trindade", "Triunfo", "Tupanatinga", "Tuparetama", "Venturosa", "Verdejante", "Vertente do Lério", "Vertentes", "Vicência", "Vitória de Santo Antão", "Xexéu"
@@ -167,7 +167,7 @@
   },
   {
     "id": "012C",
-    "question_text": "Select in the list the name of the city that is least likely to rain below 100 mm?",
+    "question_text": "Select in the list the name of the area that is least likely that it will rain below 100 mm?",
     "op": [
       "Abreu e Lima", "Afogados da Ingazeira", "Afrânio", "Agrestina", "Água Preta", "Águas Belas", "Alagoinha", "Aliança", "Altinho", "Amaraji", "Angelim", "Araçoiaba", "Araripina", "Arcoverde", "Barra de Guabiraba", "Barreiros", "Belém de Maria", "Belém de São Francisco", "Belo Jardim", "Betânia", "Bezerros", "Bodocó", "Bom Conselho", "Bom Jardim", "Bonito", "Brejão", "Brejinho", "Brejo da Madre de Deus", "Buenos Aires", "Buíque", "Cabo de Santo Agostinho", "Cabrobó", "Cachoeirinha", "Caetés", "Calçado", "Calumbi", "Camaragibe", "Camocim de São Félix", "Camutanga", "Canhotinho", "Capoeiras", "Carnaíba", "Carnaubeira da Penha", "Carpina", "Caruaru", "Casinhas", "Catende", "Cedro", "Chã de Alegria", "Chã Grande", "Condado", "Correntes", "Cortês", "Cumaru", "Cupira", "Custódia", "Dormentes", "Escada", "Exu", "Feira Nova", "Ferreiros", "Flores", "Floresta", "Frei Miguelinho", "Gameleira", "Garanhuns", "Glória do Goitá", "Goiana", "Granito", "Gravatá", "Iati", "Ibimirim", "Ibirajuba", "Igarassu", "Iguaraci", "Inajá", "Ingazeira", "Ipojuca", "Ipubi", "Itacuruba", "Itaíba", "Ilha de Itamaracá", "Itambé", "Itapetim", "Itapissuma", "Itaquitinga", "Jaboatão dos Guararapes", "Jaqueira", "Jataúba", "Jatobá", "João Alfredo", "Joaquim Nabuco", "Jucati", "Jupi", "Jurema", "Lagoa do Carro", "Lagoa do Itaenga", "Lagoa do Ouro", "Lagoa dos Gatos", "Lagoa Grande",
       "Lajedo", "Limoeiro", "Macaparana", "Machados", "Manari", "Maraial", "Mirandiba", "Moreno", "Nazaré da Mata", "Olinda", "Orobó", "Orocó", "Ouricuri", "Palmares", "Palmeirina", "Panelas", "Paranatama", "Parnamirim", "Passira", "Paudalho", "Paulista", "Pedra", "Pesqueira", "Petrolândia", "Petrolina", "Poção", "Pombos", "Primavera", "Quipapá", "Quixaba", "Recife", "Riacho das Almas", "Ribeirão", "Rio Formoso", "Sairé", "Salgadinho", "Salgueiro", "Saloá", "Sanharó", "Santa Cruz", "Santa Cruz da Baixa Verde", "Santa Cruz do Capibaribe", "Santa Filomena", "Santa Maria da Boa Vista", "Santa Maria do Cambucá", "Santa Terezinha", "São Benedito do Sul", "São Bento do Una", "São Caetano", "São João", "São Joaquim do Monte", "São José da Coroa Grande", "São José do Belmonte", "São José do Egito", "São Lourenço da Mata", "São Vicente Ferrer", "Serra Talhada", "Serrita", "Sertânia", "Sirinhaém", "Moreilândia", "Solidão", "Surubim", "Tabira", "Tacaimbó", "Tacaratu", "Tamandaré", "Taquaritinga do Norte", "Terezinha", "Terra Nova", "Timbaúba", "Toritama", "Tracunhaém", "Trindade", "Triunfo", "Tupanatinga", "Tuparetama", "Venturosa", "Verdejante", "Vertente do Lério", "Vertentes", "Vicência", "Vitória de Santo Antão", "Xexéu"
@@ -182,7 +182,7 @@
   },
   {
     "id": "013C",
-    "question_text": "What is the average rainfall in the city of Caruaru(pink)?",
+    "question_text": "What is the average rain in the area of Caruaru(pink)?",
     "op": [
     ],
     "highlights": [
@@ -195,7 +195,7 @@
   },
     {
     "id": "014T",
-    "question_text": "What is the probability that the number of taxi races in the West Chelsea/Hudson Yards(pink) be less than 18.000?",
+    "question_text": "What is the probability that the number of taxi races in the West Chelsea/Hudson Yards(pink) is smaller than 18.000?",
     "op": [
     ],
     "highlights": [
@@ -208,7 +208,7 @@
   },
   {
     "id": "015T",
-    "question_text": "What is the probability that the number of taxi races in the West Chelsea/Hudson Yards(pink) above 20.000?",
+    "question_text": "What is the probability that the number of taxi races in the West Chelsea/Hudson Yards(pink) is above 20.000?",
     "op": [
     ],
     "highlights": [
@@ -221,7 +221,7 @@
   },
   {
     "id": "016T",
-    "question_text": "What is the probability that the number of taxi races in the Times Sq/Theater District(pink) be between 18.000 and 35.000?",
+    "question_text": "What is the probability that the number of taxi races in the Times Sq/Theater District(pink) is between 18.000 and 35.000?",
     "op": [
     ],
     "highlights": [
@@ -234,7 +234,7 @@
   },
     {
     "id": "017T",
-    "question_text": "Between Midtown South(pink) and Murray Hill(blue), which of the two areas is most likely to have number of taxi races below 27.000?",
+    "question_text": "Between Midtown South(pink) and Murray Hill(blue), which of the two areas is most likely to have the number of taxi races below 27.000?",
     "op": [
       "Midtown South",
       "Murray Hill"
@@ -250,7 +250,7 @@
   },
   {
     "id": "018T",
-    "question_text": "What is the probability that the number of cab rides in Clinton East(pink) be less than Times Sq/Theatre District(blue)?",
+    "question_text": "What is the probability that the number of taxi races in Clinton East(pink) be less than Times Sq/Theatre District(blue)?",
     "op": [
       "Clinton East",
       "Times Sq/Theatre District"
