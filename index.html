@@ -6,7 +6,7 @@
 	    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	    <meta http-equiv="Content-Security-Policy" content="default-src *;img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	    <title>Study of Risk and Uncertainty on Maps</title>
+	    <title>Study of Uncertainty on Maps</title>
 		<!-- JavaScript-->
 		<script type="text/javascript" src="./js/libs/jquery-3.4.1.js"></script>
 		<script type="text/javascript" src="./js/libs/popper.min.js"></script>
@@ -43,27 +43,26 @@
 			  	<div class="w3-content">
 			    	<div style="text-align: justify;" class="w3-margin-left">
 						<h3> <b> Goal </b> </h3>
-						We ask that you participate in this study because you have the right profile to contribute to our research. <br>
+						We thank you for agreeing to participate in our study. <br>
 							- The aim of this study is to find out the most effective way to portray risks and uncertainties for geographic data visualization for people with and without visualization experience (e.g., plots, graphs) and statistics (e.g., collection, recording and analysis of numerical sample data). <br>
-							- The possible benefits of this research are to know and learn data visualization types, statistical techniques and possible integrations between both that can help the decision making process by people. <br>
+							- The possible benefits of this research are to know and learn data visualization types, statistical techniques and integrations between both that can help the decision making process. <br>
 							- However, there may also be situations where you feel embarrassed and shy about not knowing the answer to a question or because you don't know what to do in the system, as it may be something new to you.
-							- Your participation is of great value, thank you for your interest. <br>
 
 						<h3> <b> Financial Incentive for Participation </b> </h3>
 						Nothing will be paid to you and you will not be charged to participate in this research, as acceptance is voluntary.
 
 						<h3> <b> Basic Instructions </b> </h3>
-							- On the following pages you will see 2 steps of the tool tutorial followed by the Q&amp;A about the tool. <br>
-							- When prompted, answer the questions properly as shown in the tutorial step.<br>
-							- In the next screens you will be introduced the search tool. <br>
-							- There will be one approach to map visualization.
+							- On the following pages you will encounter a tutorial of the system used in the study  followed by the Q&amp;A about this system. 
+							- When prompted, answer the questions properly as shown in the tutorial.
+							- In the next screens you will be introduced to this study before start the questions. <br>
+							
 							- We estimate that it may take between 30 and 40 minutes to complete the questionnaire, so please set aside a time when you can calmly do so. <br>
 
 						<h3> <b> Technical Remarks: </b> </h3>
 							- Before you start the tutorial and questions, we request some information about yourself and your experience with data visualization and statistics. These questions are important to understand better understand the research context. <br>
 							- We ask to open this link in the Google Chrome browser. <br>
 							- Do not reload or turn back the page while filling in the form as it will discard your progress. <br>
-							- If one approach fails to load immediately, please wait a few seconds. <br>
+							- If one visualization fails to load immediately, please wait a few seconds. <br>
 
 						<h3> <b> Data collected </b> </h3>
 							By clicking "Start", you accept and consent to: <br>
@@ -75,7 +74,7 @@
 							- Data is collected only when the form is submitted. <br>
 							- If you would like more information, or have any questions regarding the research, please do not hesitate to contact us: <br>
 							<address>
-						   		(<a href="mailto:ejs@cin.ufpe.br">ejs2@cin.ufpe.br</a>,<a href="mailto:nivan@cin.ufpe.br">nivan@cin.ufpe.br</a>)<br>
+						   		(<a href="mailto:ejs@cin.ufpe.br">ejs2@cin.ufpe.br</a>,<a href="mailto:nivan@cin.ufpe.br">nivan@cin.ufpe.br</a>,<a href="mailto:nivan@cin.ufpe.br">fmm283@nyu.edu</a>)<br>
 						    </address>
 						<h3> <b> UFPE Ethics Committee </b> </h3>
 						This study is governed by the standards of the Research Ethics Committee Involving Human Beings of UFPE. <br>
@@ -96,7 +95,7 @@
 			  	</div>
 			</div>
 			<div class="alert alert-danger fade" role="alert" id="alert">
-			  	<strong>You have to accept the terms!</strong>
+			  	<strong>You have to accept the terms.</strong>
 			</div>
 		  	<button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top" id="iniciar">Iniciar</button>
 		</header>
@@ -155,7 +154,7 @@
 								  		<h3 class="card-title">Getting Started - To start we would like to know a little about yourself.</h3>
 								  	</div>
 								  	<div class="card-block" style="text-align: center;">
-								  		<h4 >Please fill in the fields below correctly:</h4>
+								  		<h4 >Please fill in the fields below:</h4>
 										<form class="needs-validation" id="5Form" method="post" action="https://script.google.com/macros/s/AKfycbxxRuIQE8YC37KsIg6x4sNtHEamBmOuY-GM7gSNjyAyWWRWzEw/exec">
 										  	<div class="form-row">
 										  		<div class="form-group col-md-1"></div>
@@ -163,45 +162,45 @@
 											      	<label for="email">Please enter your email address.</label>
 											      	<input type="email" class="form-control" id="email" name="email"  placeholder="youremail@provider.com" required>
 											      	<div class="invalid-tooltip">
-													    You need to answer!
+													    You have to fill in this field.
 													</div>
 											    </div>
 											    <div class="form-group col-md-2">
 											      	<label for="idade">How old are you?</label>
 											      	<input type="number" class="form-control" id="idade" name="idade"  min="0" max="100" required placeholder="35">
 											      	<div class="invalid-tooltip">
-													    You need to choose one!
+													    You need to choose one.
 													</div>
 											    </div>
 											    <div class="form-group col-md-2">
 											      	<label for="genero">Enter your gender:</label>
 											      	<select id="genero" class="form-control" name="genero" required>
-											      		<option disabled selected value> Pick one </option>
+											      		<option disabled selected value> Please choose one of the options </option>
 											        	<option value="Masculino">Male</option>
 											        	<option value="Feminino">Female</option>
 											        	<option value="Não Desejo Opinar">Don't wanna say.</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
-													    You need to choose one!
+													    You need to choose one.
 													</div>
 											    </div>
 											    <div class="form-group col-md-3">
-											    	<label for="escolaridade">What is your educational level?</label>
+											    	<label for="escolaridade">What is your highest level of education?</label>
 											    	<select id="escolaridade" class="form-control" name="escolaridade" required>
-											    		<option disabled selected value> Pick one </option>
+											    		<option disabled selected value> Please choose one of the options </option>
 											    		<option value="Ensino Médio Incompleto">High school (incomplete)</option>
 											        	<option value="Ensino Médio Completo">High school</option>
 											        	<option value="Ensino Superior Incompleto">Undergraduate (incomplete)</option>
 											        	<option value="Ensino Superior Completo">Bachelor's degree</option>
-											        	<option value="Pós Graduação Incompleta">Specialization (incomplete)</option>
-											        	<option value="Pós Graduação Completa">Specialization</option>
+											        	<!--<option value="Pós Graduação Incompleta">Specialization (incomplete)</option>
+											        	<option value="Pós Graduação Completa">Specialization</option>-->
 											        	<option value="Mestrado Incompleto">Master’s degree (incomplete)</option>
 											        	<option value="Mestrado Completo">Master’s degree</option>
 											        	<option value="Doutorado Incompleto">Doctoral degree (incomplete)</option>
 											        	<option value="Doutorado Completo">Doctoral degree</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
-													    You need to choose one!
+													    You need to choose one.
 													</div>
 											    </div>
 											</div>
@@ -210,34 +209,34 @@
 											    <div class="form-group col-md-2">
 											      	<label for="daltonico">Are you colorblind?</label>
 											      	<select id="daltonico" class="form-control" name="daltonico" required>
-											      		<option disabled selected value> Pick one </option>
+											      		<option disabled selected value> Please choose one of the options </option>
 											        	<option value="Não">No</option>
 											        	<option value="Sim">Yes</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
-													    You need to choose one!
+													    You need to choose one.
 													</div>
 											    </div>
 											    <div class="form-group col-md-4">
-											      	<label for="estatistica">Do you have experience with statistical data?</label>
+											      	<label for="estatistica">Do you have experience with statistical data analysis or statistics?</label>
 											      	<select id="estatistica" class="form-control" name="estatistica" required>
-											      		<option disabled selected value> Pick one </option>
+											      		<option disabled selected value> Please choose one of the options </option>
 											        	<option value="Não">No</option>
 											        	<option value="Sim">Yes</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
-													    You need to choose one!
+													    You need to choose one.
 													</div>
 											    </div>
 											    <div class="form-group col-md-4">
 											      	<label for="visualizacao">Do you have experience with data visualization? (i.e., plots, graphs)</label>
 											      	<select id="visualizacao" class="form-control" name="visualizacao" required>
-											      		<option disabled selected value> Pick one </option>
+											      		<option disabled selected value> Please choose one of the options </option>
 											        	<option value="Não">No</option>
 											        	<option value="Sim">Yes</option>
 											      	</select>
 											      	<div class="invalid-tooltip">
-													    You need to choose one!
+													    You need to choose one.
 													</div>
 											    </div>
 											</div>
@@ -258,13 +257,13 @@
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 													<h4>
-														The Interaction view allows you to interact with the tool with a few clicks and get results for your questions from the tool. The interactive visualization tool allows you to compare the distribution of an area with a range of values from X to Y, showing on the screen how likely the data from that area coincides with the chosen range. This comparison can also be done by open ranges ie above an X value or below a Y value. All you have to do is drag and scale the range on the horizontal tool bar. You can also compare data from one area against another area to see the probability that data from one area is smaller than another. This view uses a single color scheme to show the probability on the map the darker the color the greater the probability.
+														The Interaction approach allows you to probe the distribution corresponding with each area and the system will quantify the probability of different comparison operations. The first of these operations consists of asking the question: "how likely are the values of this distribution to be within a range of values from X to Y". To achieve this all you have to do is adjust the range represented by the handles of the horizontal slider toolbar. The second operation supported is to compare the distribution of values in one area against the other areas on the map. Using a simple double click on the area of interest you can ask for each area A: "what is the probability of the values in A being smaller than the values on the selected area?". The resulting probabilities of both operations are mapped with colors on each area of the map. 
 													</h4>
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
-													In this study we use two data sets. The first is a data set comprised of observed rainfall data in the state of Pernambuco (Brazil) and the second data set consists of taxi rides in the Manhattan borough of New York. The data set used in each question will be specified in the question step.
+													In this study we use two data sets. The first is a data set  is comprised of observed rainfall data for the cities in the state of Pernambuco (Brazil) and the second data set consists of the number of taxi pickups in the neighborhoods of Manhattan (New York). The data set used in each question will be specified in the question.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -289,46 +288,46 @@
 								  		<ul class="list-group">
 								  			<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
-													In this screen you will see the probability of an event occurring up to a given range of values. And you can choose this range.
+													On this screen you will see the probability of an event occurring up to a given range of values. And you can choose this range. 
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<img src="./data/Intervalo.jpg" alt="Nature" style="width:100%;height: auto;">
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">1</span>
-													 indicates the name of the technique that is displayed.
+													 indicates the visualization being used.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">2</span>
 													indicates the horizontal bar that serves as a filter where a range can be chosen to verify the probability that each area contains the range chosen within its data distribution.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">3</span>
-													shows that hovering over the areas details are displayed.
+													Hovering on an area shows its details.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">4</span>
-													contains information regarding the data shown on the map.
+													contains map title.
 												</div>
 											</li>											
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">5</span>
-													shows highlighted areas with colors (blue and pink) so we can find it more easily and make decisions about it.
+													The questions you will answer often refer to particular areas on the map. These will happen their boundaries highlighted (in blue or pink) so they can be spotted easily.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">6</span>
-													shows the color legend that classify the area values.
+													A color legend is present do enable you to map colors and values.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -366,7 +365,7 @@
 											</li>	
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													When you change the horizontal range values this reflects on the map the probability of the selected range belonging to each area the darker the color the greater the probability. Note that the horizontal bar you can move and select different range sizes the smaller the range the greater the accuracy that is reflected on the map.
+													When you change the handles of the horizontal slider this reflects on the map: the probability of the distribution in each area is within the specified range is shown in colors the darker the color the greater the probability. Note that the horizontal bar can be moved to select different range sizes; that can be smaller or bigger. Also notice that with after fixing the size of range using the handles, the horizontal bar can be by whole moved without alter the size of range. 
 												</div>
 											</li>									
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -391,7 +390,7 @@
 								  		<ul class="list-group">
 								  			<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
-													With this tool you can also compare the distribution of one area with others and see how likely it is that a city is <em><b><u>small</u></b> </em> from another city. This will be very important in this study.
+													With this tool you can also compare the distribution of one area with others and see how likely it is that a area is <em><b><u>small</u></b> </em> from another area. This will be very important in this study.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -405,7 +404,7 @@
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Initially you need to double click on any city, then the others will be compared and the selected city will be highlighted by black color.
+													Initially you need to double click on any area, then the others will be compared and the selected area will be highlighted by black color.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -415,27 +414,27 @@
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Hovering over cities will give you a probability that the distribution of other cities is <em><b><u> smaller</u></b> </em> than you chose for comparison.
+													Hovering over areas will give you a probability that the distribution of other areas is <em><b><u> smaller</u></b> </em> than you chose for comparison.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													If the selected city is wrong just double click on it and the view will be restored.
+													If the selected area is wrong just double click on it and the view will be restored.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Selecting a city to compare to the others will block the horizontal value bar until the interaction ends.
+													Selecting a area to compare to the others will block the horizontal value bar until the interaction ends.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													To undo just double click on the selected city for comparison.
+													To undo just double click on the selected area for comparison.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													Remembering the last example: if we want to compare and know the probability of the Recife (pink) distribution be less than Caruaru (blue) double click Caruaru (blue) then hover over Recife and visualize the displayed value. Finally we undo the selection by double clicking on Caruaru.
+													Remembering the last example: if we want to compare and know the probability of the Recife (pink) distribution be less than Caruaru (blue) double click Caruaru (blue) then hover over Recife and visualize the displayed value. Finally we undo the selection by double clicking on Caruaru. This view uses a double hue color scheme to show the probability on the map the darker the color the greater the probability. 
 												</div>
 											</li>											
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -460,7 +459,7 @@
 								  		<ul class="list-group">
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
-													Before answering the questions you need to mentally answer the questions below. In this screen the tool is available for you to use and familiarize as much as you think necessary.
+													Before starting the questionnaire we provide a few sample questions just to make sure that you are all set.
 												</div>
 											</li>
 											<li class="list-group-item ">
@@ -480,7 +479,7 @@
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													For each question that will be asked in the next step one or two cities will be highlighted in blue and / or pink.
+													For each question that will be asked in the next step one or two areas will be highlighted in blue and / or pink.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -510,7 +509,7 @@
 											<li class = "list-group-item d-flex justify-content-align-items-center">
 												<div>
 													<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													To compare areas we should always use the city that appears for last (highlighted in blue) as a parameter for comparison (double click). </b>
+													To compare areas we should always use the area that appears for last (highlighted in blue) as a parameter for comparison (double click). </b>
 												</div>
 											</li>
 											<li class = "list-group-item d-flex justify-content-align-items-center">
@@ -554,13 +553,13 @@
 												<img src="./data/Perguntas.jpg" alt="Nature" style="width:100%;height: auto;">
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">1</span>
 													 indicates the question number that is displayed. Questions that are not currently displayed are blurred.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">2</span>
 													show the question.
 												</div>
@@ -572,7 +571,7 @@
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">3</span>
 													show the place where you must put your answer.
 												</div>
@@ -580,23 +579,23 @@
 											<li class="list-group-item d-flex justify-content-between align-items-center">
 												<div>
 												<span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-													<b>Questions can be opened or closed (where you pick one option from one list). Whenever the question is about probability of something happening you should answer a value between 0 and 100. No need to add the symbol "%".</b>
+													<b>Questions can be opened or closed (where you choose one of the options from one list). Whenever the question is about probability of something happening you should answer a value between 0 and 100. No need to add the symbol "%".</b>
 												</div>
 											</li>	
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">4</span>
 													asks you to rate confidence in your answer from 1 to 5.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">5</span>
 													shows the horizontal range where you must slide to choose a value.
 												</div>
 											</li>
 											<li class="list-group-item d-flex justify-content-between align-items-center">
-												<div>The number
+												<div>
 												<span class="badge badge-primary badge-pill">6</span>
 													shows the Next button for the next question and / or step.
 												</div>
