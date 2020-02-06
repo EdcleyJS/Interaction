@@ -195,7 +195,7 @@
   },
     {
     "id": "014T",
-    "question_text": "What is the probability that the number of taxi races in the West Chelsea/Hudson Yards(pink) is smaller than 18.000?",
+    "question_text": "What is the probability that the number of taxi trips in the West Chelsea/Hudson Yards(pink) is smaller than 18,000?",
     "op": [
     ],
     "highlights": [
@@ -208,7 +208,7 @@
   },
   {
     "id": "015T",
-    "question_text": "What is the probability that the number of taxi races in the West Chelsea/Hudson Yards(pink) is above 20.000?",
+    "question_text": "What is the probability that the number of taxi trips in the West Chelsea/Hudson Yards(pink) is above 20,000?",
     "op": [
     ],
     "highlights": [
@@ -221,7 +221,7 @@
   },
   {
     "id": "016T",
-    "question_text": "What is the probability that the number of taxi races in the Times Sq/Theater District(pink) is between 18.000 and 35.000?",
+    "question_text": "What is the probability that the number of taxi trips in the Times Sq/Theater District(pink) is between 18,000 and 35,000?",
     "op": [
     ],
     "highlights": [
@@ -234,7 +234,7 @@
   },
     {
     "id": "017T",
-    "question_text": "Between Midtown South(pink) and Murray Hill(blue), which of the two areas is most likely to have the number of taxi races below 27.000?",
+    "question_text": "Between Midtown South(pink) and Murray Hill(blue), which of the two areas is most likely to have the number of taxi trips below 27,000?",
     "op": [
       "Midtown South",
       "Murray Hill"
@@ -250,7 +250,7 @@
   },
   {
     "id": "018T",
-    "question_text": "What is the probability that the number of taxi races in Clinton East(pink) be less than Times Sq/Theatre District(blue)?",
+    "question_text": "What is the probability that the number of taxi trips in Clinton East(pink) be less than Times Sq/Theatre District(blue)?",
     "op": [
       "Clinton East",
       "Times Sq/Theatre District"
@@ -266,7 +266,7 @@
   },
   {
     "id": "019T",
-    "question_text": "What is the probability that the number of taxi races in West Village(pink) be less than Midtown North(blue)?",
+    "question_text": "What is the probability that the number of taxi trips in West Village(pink) be less than Midtown North(blue)?",
     "op": [
       "West Village",
       "Midtown North"
@@ -282,7 +282,7 @@
   },
   {
     "id": "020T",
-    "question_text": "What is the probability that the number of taxi races in Lenox Hill West(pink) be less than Gramercy(blue)?",
+    "question_text": "What is the probability that the number of taxi trips in Lenox Hill West(pink) be less than Gramercy(blue)?",
     "op": [
       "Lenox Hill West",
       "Gramercy"
@@ -298,7 +298,7 @@
   },
   {
     "id": "021T",
-    "question_text": "What is the probability that the number of taxi races in West Village(pink) be less than Murray Hill(blue)?",
+    "question_text": "What is the probability that the number of taxi trips in West Village(pink) be less than Murray Hill(blue)?",
     "op": [
       "West Village",
       "Murray Hill"
@@ -314,7 +314,7 @@
   },
   {
     "id": "022T",
-    "question_text": "What is the probability that the number of taxi races in Central Park(pink) be less than Greenwich Village North(blue)?",
+    "question_text": "What is the probability that the number of taxi trips in Central Park(pink) be less than Greenwich Village North(blue)?",
     "op": [
       "Central Park",
       "Greenwich Village North"
@@ -330,7 +330,7 @@
   },
   {
     "id": "023T",
-    "question_text": "What is the probability that the number of taxi races in Union Sq(pink) be less than Midtown Center(blue)?",
+    "question_text": "What is the probability that the number of taxi trips in Union Sq(pink) be less than Midtown Center(blue)?",
     "op": [
       "Union Sq",
       "Midtown Center"
@@ -346,7 +346,7 @@
   },
   {
     "id": "024T",
-    "question_text": "Select in the list the name of the area most likely to have a taxi race number above 34.000?",
+    "question_text": "Select in the list the name of the area most likely to have a taxi race number above 34,000?",
     "op": [
       "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
     ],
@@ -360,7 +360,7 @@
   },
   {
     "id": "025T",
-    "question_text": "Select in the list the name of the area that is least likely to have a taxi race number above 3.500?",
+    "question_text": "Select in the list the name of the area that is least likely to have a taxi race number above 3,500?",
     "op": [
       "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
     ],
@@ -374,7 +374,7 @@
   },
   {
     "id": "026T",
-    "question_text": "Estimate what is the average number of taxi races in the Gramercy(pink) area?",
+    "question_text": "Estimate what is the average number of taxi trips in the Gramercy(pink) area?",
     "op": [
     ],
     "highlights": [
