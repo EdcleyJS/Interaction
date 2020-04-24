@@ -272,10 +272,10 @@ $(document).ready(function () {
 		id=id.substring(0, 4);
 		var p=findP(novodataset,id);
 		p=p.highlights;
-		opcoes=[];
 		p.forEach(function(d,i){
 		    opcoes.push(d);
 		});
+		opcoes=[];		
 		if(base=='C'){
 			$('#chuvaview').show();
 			$('#taxiview').hide();
@@ -301,7 +301,6 @@ $(document).ready(function () {
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else{
 			   	var formName=$(this).parent().parent()[0].id;
-			   	opcoes=[];
 				if(formName=='2Form'){
 			   		stepper2.next();
 			   		selecionadosC=[];
@@ -315,6 +314,7 @@ $(document).ready(function () {
 			    	p.forEach(function(d,i){
 			    		opcoes.push(d);
 			    	});
+			   		opcoes=[];			    	
 					if(base=='C'){
 						$('#chuvaview').show();
 						$('#taxiview').hide();
@@ -361,10 +361,11 @@ $(document).ready(function () {
 					id=id.substring(0, 4);
 				    var p=findP(novodataset,id);
 			    	p=p.highlights;
-				    opcoes=[];
+
 				    p.forEach(function(d,i){
 				    	opcoes.push(d);
 				    });
+				    opcoes=[];				    
 					if(base=='C'){
 						left=80;
 						right=400;
